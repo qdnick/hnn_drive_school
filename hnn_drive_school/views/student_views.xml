@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="action_hnn_drive_school_student" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="res_model">hnn_drive_school.student</field>
+        <field name="view_mode">tree,form,kanban,search,pivot</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record id="view_student_tree" model="ir.ui.view">
+        <field name="name">hnn_drive_school.student.tree</field>
+        <field name="model">hnn_drive_school.student</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="id"/>
+                <field name="display_name"/>
+                <field name="first_name" optional="hide"/>
+                <field name="second_name" optional="hide"/>
+                <field name="last_name" optional="hide"/>
+                <field name="phone"/>
+                <field name="passport_info"/>
+                <field name="tax_id_code"/>
+                <field name="drivers_license" optional="hide"/>
+                <field name="drivers_license_date_of_existence" string="Date of existence" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+<!-- add search -->
+    <record id="view_student_search" model="ir.ui.view">
+        <field name="name">hnn_drive_school.student.search</field>
+        <field name="model">hnn_drive_school.student</field>
+        <field name="arch" type="xml">
+            <search string="Filters">
+                <field name="last_name" operator="ilike"/>
+                <field name="passport_info" string="Passport" operator="ilike"/>
+                <field name="phone" string="Phone" operator="ilike"/>
+                <field name="tax_id_code" string="Tax ID" operator="ilike"/>
+            </search>
+        </field>
+    </record>
+<!-- search -->
+
+
+    <!-- Form View for Student -->
+    <record id="view_student_form" model="ir.ui.view">
+        <field name="name">hnn_drive_school.student.form</field>
+        <field name="model">hnn_drive_school.student</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="open_study_groups"
+                            string="Study groups"
+                            type="object"
+                            class="btn-primary"
+                    />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="id"/>
+                        <field name="first_name"/>
+                        <field name="second_name"/>
+                        <field name="last_name"/>
+                        <field name="phone"/>
+                        <field name="birth_date"/>
+                        <field name="age"/>
+                    </group>
+                    <notebook>
+                        <page name="documents" string="Documents info">
+                            <group>    
+                                <field name="passport_info"/>
+                                <field name="tax_id_code"/>
+                                <field name="drivers_license"/>
+                                <field name="drivers_license_date_of_issue"/>
+                                <field name="drivers_license_date_of_existence" string="Date of existence"/>
+                            </group>
+                        </page>
+                        <page name="medicine" string="Medical info">
+                            <group>
+                                <field name="medical_certificate"/>
+                                <field name="blood_type"/>
+                            </group>
+                        </page>
+                        <page name="groups" string="Groups">
+                            <group>
+                                <field name="group_ids"/>       
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Kanban View for Student -->
+    <record id="view_student_kanban" model="ir.ui.view">
+        <field name="name">hnn_drive_school.student.kanban</field>
+        <field name="model">hnn_drive_school.student</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="group_ids">
+                <field name="display_name"/>
+                <field name="passport_info"/>
+                <field name="tax_id_code"/>
+                <field name="phone"/>
+                <field name="last_name"/>
+                <field name="last_name"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <strong><field name="display_name"/></strong>
+                            <div class="o_kanban_details float-end">
+                            </div>
+                            <div>
+                                <field name="passport_info"/>
+                                <field name="tax_id_code"/>
+                                <field name="phone"/>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <!-- Pivot View for Student -->
+    <record id="view_student_pivot" model="ir.ui.view">
+        <field name="name">hnn_drive_school.student.pivot</field>
+        <field name="model">hnn_drive_school.student</field>
+        <field name="arch" type="xml">
+            <pivot>
+                <field name="first_name" type="row"/>
+                <field name="group_ids" type="col"/>
+            </pivot>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+        <record id="student_1" model="hnn_drive_school.student">
+            <field name="birth_date">1990-03-25</field>
+            <field name="drivers_license">AB 1234567</field>
+            <field name="drivers_license_date_of_issue">2005-03-25</field>
+            <field name="last_name">Ivanov</field>
+            <field name="first_name">Petr</field>
+            <field name="second_name">Petrovich</field>
+            <field name="blood_type">ab</field>
+            <field name="medical_certificate">MT12345678</field>
+            <field name="passport_info">МО 123456</field>
+            <field name="phone">+380981234567</field>
+            <field name="tax_id_code">1234567890</field>
+        </record>
+
+        <record id="student_2" model="hnn_drive_school.student">
+            <field name="birth_date">1985-07-14</field>
+            <field name="drivers_license">CD 2345678</field>
+            <field name="drivers_license_date_of_issue">2015-03-25</field>
+            <field name="last_name">Petrov</field>
+            <field name="first_name">Sergey</field>
+            <field name="second_name">Ivanovich</field>
+            <field name="blood_type">o</field>
+            <field name="medical_certificate">MT23456789</field>
+            <field name="passport_info">КИ 234567</field>
+            <field name="phone">+380932456789</field>
+            <field name="tax_id_code">2345378901</field>
+        </record>
+
+        <record id="student_3" model="hnn_drive_school.student">
+            <field name="birth_date">1992-01-22</field>
+            <field name="drivers_license">EF 3456789</field>
+            <field name="drivers_license_date_of_issue">2020-03-25</field>
+            <field name="last_name">Sidorov</field>
+            <field name="first_name">Andrey</field>
+            <field name="second_name">Viktorovich</field>
+            <field name="blood_type">b</field>
+            <field name="medical_certificate">MT34567890</field>
+            <field name="passport_info">ЛН 345678</field>
+            <field name="phone">+380943567890</field>
+            <field name="tax_id_code">4456789012</field>
+        </record>
+
+        <record id="student_4" model="hnn_drive_school.student">
+            <field name="birth_date">1995-05-10</field>
+            <field name="drivers_license">GH 4567890</field>
+            <field name="drivers_license_date_of_issue">2023-03-25</field>
+            <field name="last_name">Smirnov</field>
+            <field name="first_name">Nikita</field>
+            <field name="second_name">Igorevich</field>
+            <field name="blood_type">a</field>
+            <field name="medical_certificate">MT45678901</field>
+            <field name="passport_info">УМ 456789</field>
+            <field name="phone">+380954678901</field>
+            <field name="tax_id_code">4567890123</field>
+        </record>
+
+        <record id="student_5" model="hnn_drive_school.student">
+            <field name="birth_date">1988-09-30</field>
+            <!-- <field name="drivers_license">IJ 5678901</field> -->
+            <field name="last_name">Kovalenko</field>
+            <field name="first_name">Oleg</field>
+            <field name="second_name">Vladimirovich</field>
+            <field name="blood_type">ab</field>
+            <field name="medical_certificate">MT56789012</field>
+            <field name="passport_info">АВ 567890</field>
+            <field name="phone">+380965789012</field>
+            <field name="tax_id_code">5678904234</field>
+        </record>
+
+        <record id="student_6" model="hnn_drive_school.student">
+            <field name="birth_date">1991-12-01</field>
+            <!-- <field name="drivers_license">KL 6789012</field> -->
+            <field name="last_name">Gusarov</field>
+            <field name="first_name">Dmitry</field>
+            <field name="second_name">Alexandrovich</field>
+            <field name="blood_type">o</field>
+            <field name="medical_certificate">MT67890123</field>
+            <field name="passport_info">ТК 678901</field>
+            <field name="phone">+380974567890</field>
+            <field name="tax_id_code">6789017345</field>
+        </record>
+
+        <record id="student_7" model="hnn_drive_school.student">
+            <field name="birth_date">1993-06-15</field>
+            <!-- <field name="drivers_license">MN 7890123</field> -->
+            <field name="last_name">Stepanenko</field>
+            <field name="first_name">Viktor</field>
+            <field name="second_name">Yurievich</field>
+            <field name="blood_type">b</field>
+            <field name="medical_certificate">MT78901234</field>
+            <field name="passport_info">МП 789012</field>
+            <field name="phone">+380943216789</field>
+            <field name="tax_id_code">7890123456</field>
+        </record>
+
+        <record id="student_8" model="hnn_drive_school.student">
+            <field name="birth_date">1987-03-05</field>
+            <!-- <field name="drivers_license">OP 8901234</field> -->
+            <field name="last_name">Tsybulskiy</field>
+            <field name="first_name">Maxim</field>
+            <field name="second_name">Sergeyevich</field>
+            <field name="blood_type">a</field>
+            <field name="medical_certificate">MT89012345</field>
+            <field name="passport_info">МТ 890123</field>
+            <field name="phone">+380918765432</field>
+            <field name="tax_id_code">8901234567</field>
+        </record>
+
+        <record id="student_9" model="hnn_drive_school.student">
+            <field name="birth_date">1994-04-20</field>
+            <!-- <field name="drivers_license">QR 9012345</field> -->
+            <field name="last_name">Kravchenko</field>
+            <field name="first_name">Anton</field>
+            <field name="second_name">Igorevich</field>
+            <field name="blood_type">ab</field>
+            <field name="medical_certificate">MT90123456</field>
+            <field name="passport_info">ХК 901234</field>
+            <field name="phone">+380905678901</field>
+            <field name="tax_id_code">9012345278</field>
+        </record>
+
+        <record id="student_10" model="hnn_drive_school.student">
+            <field name="birth_date">1996-08-18</field>
+            <field name="drivers_license">ST 0123456</field>
+            <field name="drivers_license_date_of_issue">2023-12-25</field>
+            <field name="last_name">Bondarenko</field>
+            <field name="first_name">Roman</field>
+            <field name="second_name">Dmitrovich</field>
+            <field name="blood_type">o</field>
+            <field name="medical_certificate">MT01234567</field>
+            <field name="passport_info">ЕП 012345</field>
+            <field name="phone">+380932345678</field>
+            <field name="tax_id_code">0123456789</field>
+        </record>
+
+        <record id="student_11" model="hnn_drive_school.student">
+            <field name="birth_date">1985-11-30</field>
+            <!-- <field name="drivers_license">UV 1234567</field> -->
+            <field name="last_name">Nikiforov</field>
+            <field name="first_name">Vladimir</field>
+            <field name="second_name">Borisovich</field>
+            <field name="blood_type">ab</field>
+            <field name="medical_certificate">MT12345678</field>
+            <field name="passport_info">ЦА 123456</field>
+            <field name="phone">+380917654321</field>
+            <field name="tax_id_code">1234567893</field>
+        </record>
+
+        <record id="student_12" model="hnn_drive_school.student">
+            <field name="birth_date">1990-12-25</field>
+            <!-- <field name="drivers_license">WX 2345678</field> -->
+            <field name="last_name">Petrova</field>
+            <field name="first_name">Elena</field>
+            <field name="second_name">Vladimirovna</field>
+            <field name="blood_type">a</field>
+            <field name="medical_certificate">MT23456789</field>
+            <field name="passport_info">АБ 234567</field>
+            <field name="phone">+380911234561</field>
+            <field name="tax_id_code">2345678901</field>
+        </record>
+
+        <record id="student_13" model="hnn_drive_school.student">
+            <field name="birth_date">1995-06-12</field>
+            <!-- <field name="drivers_license">YZ 3456789</field> -->
+            <field name="last_name">Borisov</field>
+            <field name="first_name">Aleksandr</field>
+            <field name="second_name">Sergeyevich</field>
+            <field name="blood_type">o</field>
+            <field name="medical_certificate">MT34567890</field>
+            <field name="passport_info">ЛМ 345678</field>
+            <field name="phone">+380929876543</field>
+            <field name="tax_id_code">3456789012</field>
+        </record>
+
+        <record id="student_14" model="hnn_drive_school.student">
+            <field name="birth_date">1993-03-03</field>
+            <field name="drivers_license">AC 4567890</field>
+            <field name="drivers_license_date_of_issue">2018-03-25</field>
+            <field name="last_name">Dmitrieva</field>
+            <field name="first_name">Olga</field>
+            <field name="second_name">Nikolayevna</field>
+            <field name="blood_type">ab</field>
+            <field name="medical_certificate">MT45678901</field>
+            <field name="passport_info">ПС 456789</field>
+            <field name="phone">+380954321098</field>
+            <field name="tax_id_code">4567090123</field>
+        </record>
+
+        <record id="student_15" model="hnn_drive_school.student">
+            <field name="birth_date">1986-04-04</field>
+            <!-- <field name="drivers_license">BD 5678901</field> -->
+            <field name="last_name">Kuznetsov</field>
+            <field name="first_name">Andrei</field>
+            <field name="second_name">Ivanovich</field>
+            <field name="blood_type">b</field>
+            <field name="medical_certificate">MT56789012</field>
+            <field name="passport_info">ИВ 567890</field>
+            <field name="phone">+380947654321</field>
+            <field name="tax_id_code">5678901234</field>
+        </record>
+
+        <record id="student_16" model="hnn_drive_school.student">
+            <field name="birth_date">1992-02-12</field>
+            <!-- <field name="drivers_license">FG 6789012</field> -->
+            <field name="last_name">Semenov</field>
+            <field name="first_name">Mikhail</field>
+            <field name="second_name">Vasilyevich</field>
+            <field name="blood_type">a</field>
+            <field name="medical_certificate">MT67890123</field>
+            <field name="passport_info">ТК 670901</field>
+            <field name="phone">+380933456789</field>
+            <field name="tax_id_code">6789012345</field>
+        </record>
+
+        <record id="student_17" model="hnn_drive_school.student">
+            <field name="birth_date">1988-05-20</field>
+            <!-- <field name="drivers_license">HI 7890123</field> -->
+            <field name="last_name">Ivanova</field>
+            <field name="first_name">Tatyana</field>
+            <field name="second_name">Igorevna</field>
+            <field name="blood_type">o</field>
+            <field name="medical_certificate">MT78901234</field>
+            <field name="passport_info">ЦК 789012</field>
+            <field name="phone">+380934567890</field>
+            <field name="tax_id_code">7890123451</field>
+        </record>
+
+        <record id="student_18" model="hnn_drive_school.student">
+            <field name="birth_date">1989-08-30</field>
+            <field name="drivers_license">JK 8901234</field>
+            <field name="last_name">Pavlov</field>
+            <field name="first_name">Daniil</field>
+            <field name="second_name">Aleksandrovich</field>
+            <field name="blood_type">b</field>
+            <field name="medical_certificate">MT89012345</field>
+            <field name="passport_info">ЛИ 890123</field>
+            <field name="phone">+380938765432</field>
+            <field name="tax_id_code">8901234564</field>
+        </record>
+
+        <record id="student_19" model="hnn_drive_school.student">
+            <field name="birth_date">1994-07-17</field>
+            <field name="drivers_license">QR 9012345</field>
+            <field name="drivers_license_date_of_issue">2024-03-25</field>
+            <field name="last_name">Solovyev</field>
+            <field name="first_name">Vsevolod</field>
+            <field name="second_name">Dmitrievich</field>
+            <field name="blood_type">ab</field>
+            <field name="medical_certificate">MT90123456</field>
+            <field name="passport_info">ЗЛ 901234</field>
+            <field name="phone">+380911234567</field>
+            <field name="tax_id_code">9012345678</field>
+        </record>
+
+        <record id="student_20" model="hnn_drive_school.student">
+            <field name="birth_date">1991-03-15</field>
+            <!-- <field name="drivers_license">RT 0123456</field> -->
+            <field name="last_name">Borovikov</field>
+            <field name="first_name">Maksim</field>
+            <field name="second_name">Vladimirovich</field>
+            <field name="blood_type">a</field>
+            <field name="medical_certificate">MT01234567</field>
+            <field name="passport_info">ТК 012345</field>
+            <field name="phone">+380921234567</field>
+            <field name="tax_id_code">0123456781</field>
+        </record>
+
+        <record id="student_21" model="hnn_drive_school.student">
+            <field name="birth_date">1986-01-29</field>
+            <!-- <field name="drivers_license">XY 1234567</field> -->
+            <field name="last_name">Marinova</field>
+            <field name="first_name">Nina</field>
+            <field name="second_name">Sergeyevna</field>
+            <field name="blood_type">o</field>
+            <field name="medical_certificate">MT12345678</field>
+            <field name="passport_info">ХИ 123456</field>
+            <field name="phone">+380926789012</field>
+            <field name="tax_id_code">1234567891</field>
+        </record>
+
+        <record id="student_22" model="hnn_drive_school.student">
+            <field name="birth_date">1992-10-11</field>
+            <!-- <field name="drivers_license">ZA 2345678</field> -->
+            <field name="last_name">Biryukov</field>
+            <field name="first_name">Aleksey</field>
+            <field name="second_name">Petrovich</field>
+            <field name="blood_type">b</field>
+            <field name="medical_certificate">MT23456789</field>
+            <field name="passport_info">ЮК 234567</field>
+            <field name="phone">+380911231567</field>
+            <field name="tax_id_code">2345678951</field>
+        </record>
+
+        <record id="student_23" model="hnn_drive_school.student">
+            <field name="birth_date">1987-11-12</field>
+            <!-- <field name="drivers_license">BC 3456789</field> -->
+            <field name="last_name">Semenova</field>
+            <field name="first_name">Natalia</field>
+            <field name="second_name">Igorevna</field>
+            <field name="blood_type">ab</field>
+            <field name="medical_certificate">MT34567890</field>
+            <field name="passport_info">ЕВ 345678</field>
+            <field name="phone">+380929811543</field>
+            <field name="tax_id_code">3486789012</field>
+        </record>
+
+        <record id="student_24" model="hnn_drive_school.student">
+            <field name="birth_date">1990-12-25</field>
+            <field name="drivers_license">WX 2345678</field>
+            <field name="drivers_license_date_of_issue">2015-03-25</field>
+            <field name="last_name">Petrova</field>
+            <field name="first_name">Elena</field>
+            <field name="second_name">Vladimirovna</field>
+            <field name="blood_type">a</field>
+            <field name="medical_certificate">MT23456789</field>
+            <field name="passport_info">АБ 284567</field>
+            <field name="phone">+380911232267</field>
+            <field name="tax_id_code">2349678901</field>
+        </record>
+
+        <record id="student_25" model="hnn_drive_school.student">
+            <field name="birth_date">1995-06-12</field>
+            <field name="drivers_license">YZ 3456789</field>
+            <field name="drivers_license_date_of_issue">2021-03-25</field>
+            <field name="last_name">Borisov</field>
+            <field name="first_name">Aleksandr</field>
+            <field name="second_name">Sergeyevich</field>
+            <field name="blood_type">o</field>
+            <field name="medical_certificate">MT34567890</field>
+            <field name="passport_info">ЛМ 315678</field>
+            <field name="phone">+380929876593</field>
+            <field name="tax_id_code">3456783012</field>
+        </record>
+
+</odoo>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo noupdate="1">
+    <!-- Category A1 -->
+    <record id="category_a1" model="hnn_drive_school.category">
+        <field name="name">A1</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Two-wheel, up to 50cc or 4kW</field>
+        <field name="description">Two-wheel vehicles (mopeds, scooters, etc.) with engine capacity up to 50cc or electric motor power up to 4kW</field>
+        <field name="minimal_age">16</field>
+        <field name="dependent_category" eval="False"></field>
+        <field name="minimal_driving_experience">0</field>
+    </record>
+
+    <!-- Category A -->
+    <record id="category_a" model="hnn_drive_school.category">
+        <field name="name">A</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Two-wheel, 50cc or 4kW+</field>
+        <field name="description">Two-wheel vehicles (motorcycles, etc.) with engine capacity of 50cc or more, or electric motor power of 4kW or more</field>
+        <field name="minimal_age">16</field>
+        <field name="dependent_category" eval="False"></field>
+        <field name="minimal_driving_experience">0</field>
+    </record>
+
+    <!-- Category B1 -->
+    <record id="category_b1" model="hnn_drive_school.category">
+        <field name="name">B1</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Tri- or quad-wheel, up to 400kg</field>
+        <field name="description">Three- or four-wheel vehicles (quad bikes, tricycles, motorcycles with a trailer, etc.) with weight up to 400kg</field>
+        <field name="minimal_age">18</field>
+        <field name="dependent_category" eval="False"></field>
+        <field name="minimal_driving_experience">0</field>
+    </record>
+
+    <!-- Category B -->
+    <record id="category_b" model="hnn_drive_school.category">
+        <field name="name">B</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Cars up to 3500kg, 8 seats</field>
+        <field name="description">Cars with weight up to 3500kg and seating capacity (excluding driver) up to 8</field>
+        <field name="minimal_age">18</field>
+        <field name="dependent_category" eval="False"></field>
+        <field name="minimal_driving_experience">0</field>
+    </record>
+
+    <!-- Category C1 -->
+    <record id="category_c1" model="hnn_drive_school.category">
+        <field name="name">C1</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Cargo, 3500-7500kg</field>
+        <field name="description">Cargo vehicles weighing between 3500 and 7500kg</field>
+        <field name="minimal_age">18</field>
+        <field name="dependent_category" eval="False"></field>
+        <field name="minimal_driving_experience">0</field>
+    </record>
+
+    <!-- Category C -->
+    <record id="category_c" model="hnn_drive_school.category">
+        <field name="name">C</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Cargo, over 7500kg</field>
+        <field name="description">Cargo vehicles weighing over 7500kg</field>
+        <field name="minimal_age">18</field>
+        <field name="dependent_category" eval="False"></field>
+        <field name="minimal_driving_experience">0</field>
+    </record>
+
+    <!-- Category D1 -->
+    <record id="category_d1" model="hnn_drive_school.category">
+        <field name="name">D1</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Bus, up to 16 seats</field>
+        <field name="description">Buses with seating capacity up to 16 (excluding driver), intended for passenger transportation</field>
+        <field name="minimal_age">21</field>
+        <field name="dependent_category" ref="category_b"/>
+        <field name="minimal_driving_experience">3</field>
+    </record>
+
+    <!-- Category D -->
+    <record id="category_d" model="hnn_drive_school.category">
+        <field name="name">D</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Bus, over 16 seats</field>
+        <field name="description">Buses with seating capacity over 16 (excluding driver), intended for passenger transportation</field>
+        <field name="minimal_age">21</field>
+        <field name="dependent_category" ref="category_d1"/>
+        <field name="minimal_driving_experience">3</field>
+    </record>
+
+
+    <!-- Category BE, C1E, CE, D1E, DE -->
+    <record id="category_be" model="hnn_drive_school.category">
+        <field name="name">BE</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Combination vehicles</field>
+        <field name="description">Combination vehicles where the towing vehicle belongs to categories B, C1, C, D1 or D</field>
+        <field name="minimal_age">19</field>
+        <field name="dependent_category" ref="category_b"/>
+        <field name="minimal_driving_experience">1</field>
+    </record>
+
+        <!-- Category C1E -->
+    <record id="category_c1e" model="hnn_drive_school.category">
+        <field name="name">C1E</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Combination vehicles, Category C1</field>
+        <field name="description">Combination vehicles where the towing vehicle belongs to category C1</field>
+        <field name="minimal_age">19</field>
+        <field name="dependent_category" ref="category_c1"/>
+        <field name="minimal_driving_experience">1</field>
+    </record>
+
+    <!-- Category CE -->
+    <record id="category_ce" model="hnn_drive_school.category">
+        <field name="name">CE</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Combination vehicles, Category C</field>
+        <field name="description">Combination vehicles where the towing vehicle belongs to category C</field>
+        <field name="minimal_age">19</field>
+        <field name="dependent_category" ref="category_c"/>
+        <field name="minimal_driving_experience">1</field>
+    </record>
+
+    <!-- Category D1E -->
+    <record id="category_d1e" model="hnn_drive_school.category">
+        <field name="name">D1E</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Combination vehicles, Category D1</field>
+        <field name="description">Combination vehicles where the towing vehicle belongs to category D1</field>
+        <field name="minimal_age">21</field>
+        <field name="dependent_category" ref="category_d1"/>
+        <field name="minimal_driving_experience">1</field>
+    </record>
+
+    <!-- Category DE -->
+    <record id="category_de" model="hnn_drive_school.category">
+        <field name="name">DE</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Combination vehicles, Category D</field>
+        <field name="description">Combination vehicles where the towing vehicle belongs to category D</field>
+        <field name="minimal_age">21</field>
+        <field name="dependent_category" ref="category_d"/>
+        <field name="minimal_driving_experience">1</field>
+    </record>
+
+    <!-- Category T -->
+    <record id="category_t" model="hnn_drive_school.category">
+        <field name="name">T</field>
+        <!-- <field name="training_days">21</field> -->
+        <field name="detail">Trams and trolleys</field>
+        <field name="description">Trams and trolleybuses</field>
+        <field name="minimal_age">21</field>
+        <field name="dependent_category" eval="False"></field>
+        <field name="minimal_driving_experience">0</field>
+    </record>
+</odoo>

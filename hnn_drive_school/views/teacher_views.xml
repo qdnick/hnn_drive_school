@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="action_hnn_drive_school_teacher" model="ir.actions.act_window">
+        <field name="name">Teachers</field>
+        <field name="res_model">hnn_drive_school.teacher</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="context">{}</field>
+    </record>
+
+    <!-- Tree View for Teacher -->
+    <record id="view_teacher_tree" model="ir.ui.view">
+        <field name="name">hnn_drive_school.teacher.tree</field>
+        <field name="model">hnn_drive_school.teacher</field>
+        <field name="arch" type="xml">
+            <tree 
+                    decoration-danger="types_of_instructors == 'driving_instructor'"
+                    decoration-success="types_of_instructors == 'teacher_instructor'"
+                    decoration-primary="types_of_instructors == 'medical_instructor'"
+            >
+                <header>
+                    <button name="%(action_group_report_wizard)d"
+                        string="Print Group Report"
+                        type="action"
+                        class="btn-primary"
+                        icon="fa-print"
+                        display="always"
+                    />
+                </header>
+                <field name="display_name"/>
+                <field name="types_of_instructors"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View for Teacher -->
+    <record id="view_teacher_form" model="ir.ui.view">
+        <field name="name">hnn_drive_school.teacher.form</field>
+        <field name="model">hnn_drive_school.teacher</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="%(action_group_report_wizard)d"
+                        string="Print Group Report"
+                        type="action"
+                        class="btn-primary"
+                        icon="fa-print"
+                        display="always"
+                    />
+                </header>
+                <sheet>
+                    <group>
+                        <field name="types_of_instructors"/>
+                        <field name="first_name"/>
+                        <field name="second_name"/>
+                        <field name="last_name"/>
+                    </group>
+                    <notebook>
+                        <page name="personal_info" string="Personal">
+                            <group>
+                                <field name="phone"/>
+                                <field name="birth_date"/>
+                            </group>
+                        </page>
+                        <page name="document_info" string="Documents">
+                            <group>
+                                <field name="passport_info"/>
+                                <field name="tax_id_code"/>
+                                <field name="drivers_license"/>
+                                <field name="specialist_certificate"/>
+                                <field name="higher_education_info"/>
+                            </group>
+                        </page>
+                        <page name="groups" string="Groups">
+                            <field name="all_study_groups"/>
+                            <!-- <field name="all_study_groups" context="{'search_default_status_confirmed': 1}">
+                                <kanban>
+                                    <field name="category_full_name"/>
+                                    <field name="category_id"/>
+                                    <field name="start_date"/>
+                                    <field name="end_date"/>
+                                    <templates>
+                                        <t t-name="kanban-box">
+                                            <div style="position: relative" class="oe_kanban_global_click">
+                                                <div>
+                                                    <div class="o_kanban_record_title">
+                                                        <field name="category_full_name"/>
+                                                        <div class="o_kanban_details float-end">
+                                                            <span class="text-muted">
+                                                                <t t-if="record.start_date.raw_value"><field name="start_date"/><br/></t>
+                                                                <t t-if="record.end_date.raw_value"><field name="end_date"/></t>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </templates>
+                                </kanban>
+                            </field> -->
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Kanban View for Teacher -->
+    <record id="view_teacher_kanban" model="ir.ui.view">
+        <field name="name">hnn_drive_school.teacher.kanban</field>
+        <field name="model">hnn_drive_school.teacher</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="types_of_instructors">
+                <field name="display_name"/>
+                <field name="types_of_instructors"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <strong><field name="display_name"/></strong>
+                            <div><field name="types_of_instructors"/></div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="action_group_report_wizard" model="ir.actions.act_window">
+        <field name="name">Print study group Report</field>
+        <field name="res_model">group.report.wizard</field>
+        <field name="view_mode">form</field>
+        <!-- <field name="target">current</field> -->
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="model_hnn_drive_school_study_group"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="binding_type">report</field>
+    </record>
+
+</odoo>

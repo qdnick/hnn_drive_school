@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="hnn_drive_school_student_report_paperformat" model="report.paperformat">
+        <field name="name">A4 doctor</field>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">25</field>
+        <field name="margin_bottom">25</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">15</field>
+        <field name="header_spacing">18</field>
+    </record>
+
+    <record id="hnn_drive_school_student_report" model="ir.actions.report">
+        <field name="name">Drive school student report</field>
+        <field name="model">hnn_drive_school.student</field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">hnn_drive_school.report_student_template</field>
+        <field name="report_file">hnn_drive_school.report_student_template</field>
+        <field name="print_report_name">(object._get_report_base_filename())</field>
+        <field name="attachment"/>
+        <field name="binding_model_id" ref="model_hnn_drive_school_student"/>
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="hnn_drive_school.hnn_drive_school_student_report_paperformat"/>
+    </record>
+
+    <template id="report_student_template">
+        <t t-call="web.html_container">
+            <style>
+                .page-break {
+                page-break-after: always;
+                }
+            </style>
+            <div style="max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                <t t-foreach="docs" t-as="student">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div class="oe_structure">
+                                <div>
+                                    <h2 style="font-size: 18px; margin-bottom: 10px;">
+                                        <strong><t t-esc="student.display_name"/></strong>
+                                    </h2>
+                                    <br/>
+                                    <h4>Groups:</h4>
+                                    <table class="table-bordered" style="width: 100%; border-collapse: collapse; border: 1px solid black;">
+                                        <thead style="display: table-row-group">
+                                            <tr>
+                                                <th style="border: 1px solid black; padding: 5px; margin-left:30px;">Group name</th>
+                                                <th style="border: 1px solid black; padding: 5px; margin-left:30px;">Start date</th>
+                                                <th style="border: 1px solid black; padding: 5px; margin-left:30px;">End date</th>
+                                                <th style="border: 1px solid black; padding: 5px; margin-left:30px;">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <t t-set="groups" t-value="student.group_ids"/>
+                                            <t t-foreach="groups" t-as="group">
+                                                <tr>
+                                                    <td><t t-esc="group.name"/></td>
+                                                    <td><t t-esc="group.start_date.strftime('%Y-%m-%d')"/></td>
+                                                    <td><t t-esc="group.end_date.strftime('%Y-%m-%d')"/></td>
+                                                    <td><t t-esc="group.status"/></td>
+                                                </tr>
+                                            </t>
+                                        </tbody>
+                                    </table>
+                                    <br/>
+                                </div>
+                            </div>
+                            <div class="page-break"></div>
+                        </div>
+                    </t>
+                </t>
+            </div>
+        </t>
+    </template>
+
+</odoo>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+    
+    <record id="action_hnn_drive_school_category" model="ir.actions.act_window">
+        <field name="name">Categories</field>
+        <field name="res_model">hnn_drive_school.category</field>
+        <field name="view_mode">tree,form,kanban</field>
+        <field name="context">{}</field>
+    </record>
+
+    <record id="view_category_tree" model="ir.ui.view">
+        <field name="name">hnn_drive_school.category.tree</field>
+        <field name="model">hnn_drive_school.category</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="full_name"/>
+                <field name="training_days"/>
+                <field name="description" optional="hide"/>
+                <field name="minimal_age" optional="hide"/>
+                <field name="dependent_category" optional="hide"/>
+                <field name="minimal_driving_experience" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_category_kanban" model="ir.ui.view">
+        <field name="name">hnn_drive_school.category.kanban</field>
+        <field name="model">hnn_drive_school.category</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_example" default_group_by="training_days">
+                <field name="training_days"/>
+                <field name="full_name"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div style="position: relative" class="oe_kanban_global_click">
+                            <div>
+                                <div class="o_kanban_record_title">
+                                    <field name="full_name"/>
+                                    <div class="o_kanban_details float-end">
+                                        <span class="text-muted">
+                                            <t t-if="record.training_days.raw_value"><field name="training_days"/></t>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_category_form" model="ir.ui.view">
+        <field name="name">hnn_drive_school.category.form</field>
+        <field name="model">hnn_drive_school.category</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="full_name"/>
+                        <field name="name"/>
+                        <field name="detail"/>
+                        <field name="training_days"/>
+                        <field name="description"/>
+                    </group>
+                    <group string="Dependences">                        
+                        <field name="minimal_age"/>
+                        <field name="dependent_category"/>
+                        <field name="minimal_driving_experience"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

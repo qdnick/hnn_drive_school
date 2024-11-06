@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+    <record id="study_group_1" model="hnn_drive_school.study_group">
+        <field name="category_id" ref="hnn_drive_school.category_a1"/>
+        <field name="name">A1-4876/24</field>
+        <field name="start_date">2024-10-15</field>
+        <field name="end_date">2024-11-12</field>
+        <field name="status">registration</field>
+        <field name="teacher_instructor_id" ref="teacher_1"/>
+        <field name="medical_instructor_id" ref="teacher_2"/>
+        <field name="driving_instructor_id" ref="teacher_3"/>
+        <field name="student_ids" eval="[(6, 0, [ref('student_5'), ref('student_6'), ref('student_3'), ref('student_7'), ref('student_8'), ref('student_9')])]"/>
+    </record>
+
+    <record id="study_group_2" model="hnn_drive_school.study_group">
+        <field name="category_id" ref="hnn_drive_school.category_b"/>
+        <field name="name">B-876/24</field>
+        <field name="start_date">2024-10-29</field>
+        <field name="status">registration</field>
+        <field name="teacher_instructor_id" ref="teacher_4"/>
+        <field name="medical_instructor_id" ref="teacher_2"/>
+        <field name="driving_instructor_id" ref="teacher_6"/>
+        <field name="student_ids" eval="[(6, 0, [ref('student_1'), ref('student_2'), ref('student_3'), ref('student_7'), ref('student_8'), ref('student_10'), ref('student_18'), ref('student_19'), ref('student_20'), ref('student_21'), ref('student_22'), ref('student_23'), ref('student_24')])]"/>
+    </record>
+
+    <record id="study_group_3" model="hnn_drive_school.study_group">
+        <field name="category_id" ref="hnn_drive_school.category_d"/>
+        <field name="name">D-211/24</field>
+        <field name="start_date">2024-10-01</field>
+        <field name="status">confirmed</field>
+        <field name="teacher_instructor_id" ref="teacher_4"/>
+        <field name="medical_instructor_id" ref="teacher_2"/>
+        <field name="driving_instructor_id" ref="teacher_6"/>
+        <field name="student_ids" eval="[(6, 0, [ref('student_1'), ref('student_2'), ref('student_3')])]"/>
+    </record>
+
+
+    <record id="study_group_4" model="hnn_drive_school.study_group">
+        <field name="category_id" ref="hnn_drive_school.category_d"/>
+        <field name="name">D-212/24</field>
+        <field name="start_date">2024-10-11</field>
+        <field name="status">confirmed</field>
+        <field name="teacher_instructor_id" ref="teacher_7"/>
+        <field name="medical_instructor_id" ref="teacher_8"/>
+        <field name="driving_instructor_id" ref="teacher_9"/>
+        <field name="student_ids" eval="[(6, 0, [ref('student_1'), ref('student_2'), ref('student_3')])]"/>
+    </record>
+
+    <record id="study_group_5" model="hnn_drive_school.study_group">
+        <field name="category_id" ref="hnn_drive_school.category_a"/>
+        <field name="name">A1-2222/24</field>
+        <field name="start_date">2024-09-15</field>
+        <!-- <field name="end_date">2024-11-12</field> -->
+        <field name="status">closed</field>
+        <field name="teacher_instructor_id" ref="teacher_1"/>
+        <field name="medical_instructor_id" ref="teacher_2"/>
+        <field name="driving_instructor_id" ref="teacher_3"/>
+        <field name="student_ids" eval="[(6, 0, [ref('student_5'), ref('student_6'), ref('student_3'), ref('student_7'), ref('student_8'), ref('student_9')])]"/>
+    </record>
+
+        <record id="study_group_6" model="hnn_drive_school.study_group">
+        <field name="category_id" ref="hnn_drive_school.category_b"/>
+        <field name="name">A1-4876/24</field>
+        <field name="start_date">2024-08-15</field>
+        <!-- <field name="end_date">2024-11-12</field> -->
+        <field name="status">closed</field>
+        <field name="teacher_instructor_id" ref="teacher_10"/>
+        <field name="medical_instructor_id" ref="teacher_11"/>
+        <field name="driving_instructor_id" ref="teacher_12"/>
+        <field name="student_ids" eval="[(6, 0, [ref('student_5'), ref('student_6'), ref('student_3'), ref('student_7'), ref('student_8'), ref('student_9')])]"/>
+    </record>
+
+    <record id="study_group_7" model="hnn_drive_school.study_group">
+        <field name="category_id" ref="hnn_drive_school.category_b"/>
+        <field name="name">A1-2223/24</field>
+        <field name="start_date">2024-09-15</field>
+        <!-- <field name="end_date">2024-11-12</field> -->
+        <field name="status">closed</field>
+        <field name="teacher_instructor_id" ref="teacher_13"/>
+        <field name="medical_instructor_id" ref="teacher_14"/>
+        <field name="driving_instructor_id" ref="teacher_15"/>
+        <field name="student_ids" eval="[(6, 0, [ref('student_5'), ref('student_6'), ref('student_3'), ref('student_7'), ref('student_8'), ref('student_9')])]"/>
+    </record>
+
+    <record id="study_group_8" model="hnn_drive_school.study_group">
+        <field name="category_id" ref="hnn_drive_school.category_b"/>
+        <field name="name">A1-0001/24</field>
+        <field name="start_date">2024-10-15</field>
+        <field name="end_date">2024-11-12</field>
+        <field name="status">registration</field>
+        <field name="teacher_instructor_id" ref="teacher_1"/>
+        <field name="medical_instructor_id" ref="teacher_2"/>
+        <field name="driving_instructor_id" ref="teacher_3"/>
+        <field name="student_ids" eval="[(6, 0, [ref('student_5'), ref('student_6'), ref('student_3'), ref('student_7'), ref('student_8'), ref('student_9')])]"/>
+    </record>
+
+    <record id="study_group_9" model="hnn_drive_school.study_group">
+        <field name="category_id" ref="hnn_drive_school.category_a1"/>
+        <field name="name">A1-2228/24</field>
+        <field name="start_date">2024-10-15</field>
+        <field name="end_date">2024-11-12</field>
+        <field name="status">closed</field>
+        <field name="teacher_instructor_id" ref="teacher_1"/>
+        <field name="medical_instructor_id" ref="teacher_2"/>
+        <field name="driving_instructor_id" ref="teacher_3"/>
+        <field name="student_ids" eval="[(6, 0, [ref('student_5'), ref('student_6'), ref('student_3'), ref('student_7'), ref('student_8'), ref('student_9')])]"/>
+    </record>
+
+    <record id="study_group_10" model="hnn_drive_school.study_group">
+        <field name="category_id" ref="hnn_drive_school.category_a"/>
+        <field name="name">A1-1119/24</field>
+        <field name="start_date">2024-10-01</field>
+        <!-- <field name="end_date">2024-11-12</field> -->
+        <field name="status">confirmed</field>
+        <field name="teacher_instructor_id" ref="teacher_1"/>
+        <field name="medical_instructor_id" ref="teacher_2"/>
+        <field name="driving_instructor_id" ref="teacher_3"/>
+        <field name="student_ids" eval="[(6, 0, [ref('student_5'), ref('student_6'), ref('student_3'), ref('student_7'), ref('student_8'), ref('student_9')])]"/>
+    </record>
+
+    <record id="study_group_11" model="hnn_drive_school.study_group">
+        <field name="category_id" ref="hnn_drive_school.category_a"/>
+        <field name="name">A1-1120/24</field>
+        <field name="start_date">2024-07-15</field>
+        <field name="end_date">2024-11-12</field>
+        <field name="status">confirmed</field>
+        <field name="teacher_instructor_id" ref="teacher_4"/>
+        <field name="medical_instructor_id" ref="teacher_5"/>
+        <field name="driving_instructor_id" ref="teacher_6"/>
+        <field name="student_ids" eval="[(6, 0, [ref('student_5'), ref('student_6'), ref('student_3'), ref('student_7'), ref('student_8'), ref('student_9')])]"/>
+    </record>
+
+</odoo>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+    <!-- Category A1 -->
+    <record id="category_a1" model="hnn_drive_school.category">
+        <field name="training_days">14</field>
+    </record>
+
+    <!-- Category A -->
+    <record id="category_a" model="hnn_drive_school.category">
+        <field name="training_days">14</field>
+    </record>
+
+    <!-- Category B1 -->
+    <record id="category_b1" model="hnn_drive_school.category">
+        <field name="training_days">30</field>
+    </record>
+
+    <!-- Category B -->
+    <record id="category_b" model="hnn_drive_school.category">
+        <field name="training_days">30</field>
+    </record>
+
+    <!-- Category C1 -->
+    <record id="category_c1" model="hnn_drive_school.category">
+        <field name="training_days">21</field>
+    </record>
+
+    <!-- Category C -->
+    <record id="category_c" model="hnn_drive_school.category">
+        <field name="training_days">21</field>
+    </record>
+
+    <!-- Category D1 -->
+    <record id="category_d1" model="hnn_drive_school.category">
+        <field name="training_days">40</field>
+    </record>
+
+    <!-- Category D -->
+    <record id="category_d" model="hnn_drive_school.category">
+        <field name="training_days">40</field>
+    </record>
+
+
+    <!-- Category BE, C1E, CE, D1E, DE -->
+    <record id="category_be" model="hnn_drive_school.category">
+        <field name="training_days">21</field>
+    </record>
+
+        <!-- Category C1E -->
+    <record id="category_c1e" model="hnn_drive_school.category">
+        <field name="training_days">21</field>
+    </record>
+
+    <!-- Category CE -->
+    <record id="category_ce" model="hnn_drive_school.category">
+        <field name="training_days">21</field>
+    </record>
+
+    <!-- Category D1E -->
+    <record id="category_d1e" model="hnn_drive_school.category">
+        <field name="training_days">21</field>
+    </record>
+
+    <!-- Category DE -->
+    <record id="category_de" model="hnn_drive_school.category">
+        <field name="training_days">21</field>
+    </record>
+
+    <!-- Category T -->
+    <record id="category_t" model="hnn_drive_school.category">
+        <field name="training_days">60</field>
+    </record>
+</odoo>

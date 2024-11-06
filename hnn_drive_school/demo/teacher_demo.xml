@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+        <record id="teacher_1" model="hnn_drive_school.teacher">
+            <field name="birth_date">1980-10-15</field>
+            <field name="drivers_license">AE 5206814</field>
+            <field name="last_name">Ivanov</field>
+            <field name="first_name">Illia</field>
+            <field name="second_name">Ivanovich</field>
+            <field name="higher_education_info">Diplom #ABC123456 2000.12.27 Kyiv</field>
+            <field name="passport_info">МО 123456</field>
+            <field name="phone">+380951234567</field>
+            <field name="specialist_certificate">MT12345678</field>
+            <field name="tax_id_code">1234567890</field>
+            <field name="types_of_instructors">teacher_instructor</field>
+        </record>
+
+        <record id="teacher_2" model="hnn_drive_school.teacher">
+            <field name="birth_date">1985-03-12</field>
+            <field name="drivers_license">BF 7890123</field>
+            <field name="last_name">Maximov</field>
+            <field name="first_name">Petr</field>
+            <field name="second_name">Ivanovich</field>
+            <field name="higher_education_info">Diplom #XYZ654321 2005.01.15 Lviv</field>
+            <field name="passport_info">КИ 654321</field>
+            <field name="phone">+380932345678</field>
+            <field name="specialist_certificate">MT87654321</field>
+            <field name="tax_id_code">2345678901</field>
+            <field name="types_of_instructors">medical_instructor</field>
+        </record>
+
+        <record id="teacher_3" model="hnn_drive_school.teacher">
+            <field name="birth_date">1990-07-25</field>
+            <field name="drivers_license">CD 3456789</field>
+            <field name="last_name">Sidorov</field>
+            <field name="first_name">Vlad</field>
+            <field name="second_name">Mykolayovich</field>
+            <field name="higher_education_info">Diplom #DEF789012 2010.06.30 Odesa</field>
+            <field name="passport_info">ХМ 987654</field>
+            <field name="phone">+380954321098</field>
+            <field name="specialist_certificate">MT45678901</field>
+            <field name="tax_id_code">3456789012</field>
+            <field name="types_of_instructors">driving_instructor</field>
+        </record>
+
+        <record id="teacher_4" model="hnn_drive_school.teacher">
+            <field name="birth_date">1978-11-30</field>
+            <field name="drivers_license">GH 5678901</field>
+            <field name="last_name">Kovalenko</field>
+            <field name="first_name">Olga</field>
+            <field name="second_name">Viktorivna</field>
+            <field name="higher_education_info">Diplom #GHI234567 2002.05.14 Kharkiv</field>
+            <field name="passport_info">ЛВ 345678</field>
+            <field name="phone">+380965432109</field>
+            <field name="specialist_certificate">MT23456789</field>
+            <field name="tax_id_code">4567890123</field>
+            <field name="types_of_instructors">teacher_instructor</field>
+        </record>
+
+        <record id="teacher_5" model="hnn_drive_school.teacher">
+            <field name="birth_date">1988-06-21</field>
+            <field name="drivers_license">IJ 1234567</field>
+            <field name="last_name">Shevchenko</field>
+            <field name="first_name">Taras</field>
+            <field name="second_name">Grigorievich</field>
+            <field name="higher_education_info">Diplom #JKL987654 2015.03.10 Ivano-Frankivsk</field>
+            <field name="passport_info">ДП 654321</field>
+            <field name="phone">+380912345678</field>
+            <field name="specialist_certificate">MT34567890</field>
+            <field name="tax_id_code">5678901234</field>
+            <field name="types_of_instructors">medical_instructor</field>
+        </record>
+
+        <record id="teacher_6" model="hnn_drive_school.teacher">
+            <field name="birth_date">1982-09-10</field>
+            <field name="drivers_license">KL 7654321</field>
+            <field name="last_name">Ivanova</field>
+            <field name="first_name">Maria</field>
+            <field name="second_name">Petrovna</field>
+            <field name="higher_education_info">Diplom #MNO123456 2008.04.20 Cherkasy</field>
+            <field name="passport_info">МТ 123456</field>
+            <field name="phone">+380917654321</field>
+            <field name="specialist_certificate">MT56789012</field>
+            <field name="tax_id_code">6789012345</field>
+            <field name="types_of_instructors">driving_instructor</field>
+        </record>
+
+        <record id="teacher_7" model="hnn_drive_school.teacher">
+            <field name="birth_date">1975-05-15</field>
+            <field name="drivers_license">MN 5432109</field>
+            <field name="last_name">Petrenko</field>
+            <field name="first_name">Nina</field>
+            <field name="second_name">Nikolayevna</field>
+            <field name="higher_education_info">Diplom #PQR456789 1999.09.30 Ternopil</field>
+            <field name="passport_info">ОК 987654</field>
+            <field name="phone">+380922345678</field>
+            <field name="specialist_certificate">MT78901234</field>
+            <field name="tax_id_code">7890123456</field>
+            <field name="types_of_instructors">teacher_instructor</field>
+        </record>
+
+        <record id="teacher_8" model="hnn_drive_school.teacher">
+            <field name="birth_date">1993-12-05</field>
+            <field name="drivers_license">OP 6789012</field>
+            <field name="last_name">Dovzhenko</field>
+            <field name="first_name">Viktor</field>
+            <field name="second_name">Viktorovich</field>
+            <field name="higher_education_info">Diplom #STU234567 2017.12.01 Chernivtsi</field>
+            <field name="passport_info">ЛМ 123456</field>
+            <field name="phone">+380934567890</field>
+            <field name="specialist_certificate">MT89012345</field>
+            <field name="tax_id_code">8901234567</field>
+            <field name="types_of_instructors">medical_instructor</field>
+        </record>
+
+        <record id="teacher_9" model="hnn_drive_school.teacher">
+            <field name="birth_date">1991-08-19</field>
+            <field name="drivers_license">QR 2345678</field>
+            <field name="last_name">Kovalchuk</field>
+            <field name="first_name">Igor</field>
+            <field name="second_name">Igorevich</field>
+            <field name="higher_education_info">Diplom #VWX567890 2016.07.15 Sumy</field>
+            <field name="passport_info">ХБ 234567</field>
+            <field name="phone">+380965432890</field>
+            <field name="specialist_certificate">MT12345678</field>
+            <field name="tax_id_code">9012345678</field>
+            <field name="types_of_instructors">driving_instructor</field>
+        </record>
+
+        <record id="teacher_10" model="hnn_drive_school.teacher">
+            <field name="birth_date">1987-04-22</field>
+            <field name="drivers_license">ST 6789012</field>
+            <field name="last_name">Chernenko</field>
+            <field name="first_name">Alina</field>
+            <field name="second_name">Maksymivna</field>
+            <field name="higher_education_info">Diplom #YZA456123 2014.03.12 Dnipro</field>
+            <field name="passport_info">ЛГ 345678</field>
+            <field name="phone">+380914567890</field>
+            <field name="specialist_certificate">MT23456789</field>
+            <field name="tax_id_code">1234567890</field>
+            <field name="types_of_instructors">teacher_instructor</field>
+        </record>
+
+        <record id="teacher_11" model="hnn_drive_school.teacher">
+            <field name="birth_date">1984-10-30</field>
+            <field name="drivers_license">UV 8765432</field>
+            <field name="last_name">Mykytiuk</field>
+            <field name="first_name">Serhiy</field>
+            <field name="second_name">Petrovich</field>
+            <field name="higher_education_info">Diplom #BCD123456 2009.12.01 Vinnytsia</field>
+            <field name="passport_info">ЯН 765432</field>
+            <field name="phone">+380918765432</field>
+            <field name="specialist_certificate">MT56789012</field>
+            <field name="tax_id_code">2345678901</field>
+            <field name="types_of_instructors">medical_instructor</field>
+        </record>
+
+        <record id="teacher_12" model="hnn_drive_school.teacher">
+            <field name="birth_date">1989-09-29</field>
+            <field name="drivers_license">WX 3456789</field>
+            <field name="last_name">Hutsuliak</field>
+            <field name="first_name">Yuriy</field>
+            <field name="second_name">Serhiyovych</field>
+            <field name="higher_education_info">Diplom #FGH654321 2013.11.20 Kremenchuk</field>
+            <field name="passport_info">ИМ 432109</field>
+            <field name="phone">+380927654321</field>
+            <field name="specialist_certificate">MT89012345</field>
+            <field name="tax_id_code">3456789012</field>
+            <field name="types_of_instructors">driving_instructor</field>
+        </record>
+
+        <record id="teacher_13" model="hnn_drive_school.teacher">
+            <field name="birth_date">1995-02-15</field>
+            <field name="drivers_license">YZ 6789012</field>
+            <field name="last_name">Dmitriev</field>
+            <field name="first_name">Aleksey</field>
+            <field name="second_name">Sergeyevich</field>
+            <field name="higher_education_info">Diplom #JKL123456 2018.09.30 Zaporizhzhia</field>
+            <field name="passport_info">ХО 987654</field>
+            <field name="phone">+380908765432</field>
+            <field name="specialist_certificate">MT23456789</field>
+            <field name="tax_id_code">4567890123</field>
+            <field name="types_of_instructors">teacher_instructor</field>
+        </record>
+
+        <record id="teacher_14" model="hnn_drive_school.teacher">
+            <field name="birth_date">1994-05-24</field>
+            <field name="drivers_license">AB 1234567</field>
+            <field name="last_name">Volovenko</field>
+            <field name="first_name">Anatoliy</field>
+            <field name="second_name">Anatoliyovych</field>
+            <field name="higher_education_info">Diplom #ABC987654 2016.02.15 Rivne</field>
+            <field name="passport_info">ГД 543210</field>
+            <field name="phone">+380956789012</field>
+            <field name="specialist_certificate">MT12345678</field>
+            <field name="tax_id_code">5678901234</field>
+            <field name="types_of_instructors">medical_instructor</field>
+        </record>
+
+        <record id="teacher_15" model="hnn_drive_school.teacher">
+            <field name="birth_date">1986-11-11</field>
+            <field name="drivers_license">CD 2345678</field>
+            <field name="last_name">Tsybulskiy</field>
+            <field name="first_name">Dmitry</field>
+            <field name="second_name">Aleksandrovich</field>
+            <field name="higher_education_info">Diplom #XYZ123456 2011.08.20 Chernihiv</field>
+            <field name="passport_info">ЕХ 654321</field>
+            <field name="phone">+380948765432</field>
+            <field name="specialist_certificate">MT98765432</field>
+            <field name="tax_id_code">6789012345</field>
+            <field name="types_of_instructors">driving_instructor</field>
+        </record>
+
+</odoo>

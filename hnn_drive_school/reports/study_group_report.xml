@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="hnn_drive_school_study_group_report_paperformat" model="report.paperformat">
+        <field name="name">A4 doctor</field>
+        <field name="format">A4</field>
+        <field name="orientation">Portrait</field>
+        <field name="margin_top">25</field>
+        <field name="margin_bottom">25</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">15</field>
+        <field name="header_spacing">18</field>
+    </record>
+
+    <record id="hnn_drive_school_study_group_report" model="ir.actions.report">
+        <field name="name">Drive school study_group report</field>
+        <field name="model">hnn_drive_school.study_group</field>
+        <field name="report_type">qweb-html</field>
+        <field name="report_name">hnn_drive_school.report_study_group_template</field>
+        <field name="report_file">hnn_drive_school.report_study_group_template</field>
+        <field name="print_report_name">(object._get_report_base_filename())</field>
+        <field name="attachment"/>
+        <field name="binding_model_id" ref="model_hnn_drive_school_study_group"/>
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="hnn_drive_school.hnn_drive_school_study_group_report_paperformat"/>
+    </record>
+
+    <template id="report_study_group_template">
+        <t t-call="web.html_container">
+            <style>
+                .page-break {
+                page-break-after: always;
+                }
+            </style>
+            <div style="max-width: 600px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);">
+                <t t-foreach="docs" t-as="study_group">
+                    <t t-call="web.external_layout">
+                        <div class="page">
+                            <div class="oe_structure">
+                                <div>
+                                    <h2 style="font-size: 18px; margin-bottom: 10px;">
+                                        <span>Group name: </span><t t-esc="study_group.name"/>
+                                        <br/>
+                                        <strong><span>Group category: </span><t t-esc="study_group.category_full_name"/></strong>
+                                        <br/>
+                                        <span>Group status: </span><t t-esc="study_group.status"/>
+                                        <br/>
+                                        <span>Group period: from </span><t t-esc="study_group.start_date"/><span> to </span><t t-esc="study_group.end_date"/>
+                                        <br/>
+                                    </h2>
+                                    <br/>
+                                    <strong><span>Group students: </span></strong>
+                                    <table class="table-bordered" style="width: 100%; border-collapse: collapse; border: 1px solid black;">
+                                        <thead style="display: table-row-group">
+                                            <tr>
+                                                <th style="border: 1px solid black; padding: 5px; margin-left:30px;">Display name</th>
+                                                <th style="border: 1px solid black; padding: 5px; margin-left:30px;">Passport</th>
+                                                <th style="border: 1px solid black; padding: 5px; margin-left:30px;">Tax id</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <t t-set="students" t-value="study_group.student_ids"/>
+                                            <t t-foreach="students" t-as="student">
+                                                <tr>
+                                                    <td><t t-esc="student.display_name"/></td>
+                                                    <td><t t-esc="student.passport_info"/></td>
+                                                    <td><t t-esc="student.tax_id_code"/></td>
+                                                </tr>
+                                            </t>
+                                        </tbody>
+                                    </table>
+                                    <br/>
+                                </div>
+                            </div>
+                            <div class="page-break"></div>
+                        </div>
+                    </t>
+                </t>
+            </div>
+        </t>
+    </template>
+
+</odoo>

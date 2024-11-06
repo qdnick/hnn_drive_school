@@ -1,0 +1,20 @@
+/* Красный для driving_instructor */
+.oe_statusbar_driving_instructor {
+    background-color: #ff4d4d !important;
+    /* Красный */
+    color: white;
+}
+
+/* Зеленый для teacher_instructor */
+.oe_statusbar_teacher_instructor {
+    background-color: #4CAF50 !important;
+    /* Зеленый */
+    color: white;
+}
+
+/* Синий для medical_instructor */
+.oe_statusbar_medical_instructor {
+    background-color: #4d79ff !important;
+    /* Синий */
+    color: white;
+}

@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_hnn_drive_school_person_manager,hnn_drive_school.person.manager,model_hnn_drive_school_person,base.group_user,1,1,1,1
+access_hnn_drive_school_person_user,hnn_drive_school.person.user,model_hnn_drive_school_person,base.group_user,1,0,1,0
+
+access_hnn_drive_school_teacher_manager,hnn_drive_school.teacher.manager,model_hnn_drive_school_teacher,base.group_user,1,1,1,1
+access_hnn_drive_school_teacher_user,hnn_drive_school.teacher.user,model_hnn_drive_school_teacher,base.group_user,1,0,1,0
+
+access_hnn_drive_school_student_manager,hnn_drive_school.student.manager,model_hnn_drive_school_student,base.group_user,1,1,1,1
+access_hnn_drive_school_student_user,hnn_drive_school.student.user,model_hnn_drive_school_student,base.group_user,1,0,1,0
+
+access_hnn_drive_school_category_manager,hnn_drive_school.category.manager,model_hnn_drive_school_category,base.group_user,1,1,1,1
+access_hnn_drive_school_category_user,hnn_drive_school.category.user,model_hnn_drive_school_category,base.group_user,1,0,1,0
+
+access_hnn_drive_school_study_group_manager,hnn_drive_school.study_group.manager,model_hnn_drive_school_study_group,base.group_user,1,1,1,1
+access_group_report_wizard_user,access_group_report_wizard_user,model_group_report_wizard,base.group_user,1,1,1,1

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+
+    <record id="action_hnn_drive_school_study_group" model="ir.actions.act_window">
+        <field name="name">Study groups</field>
+        <field name="res_model">hnn_drive_school.study_group</field>
+        <field name="view_mode">tree,form,kanban,calendar,search,pivot</field>
+        <field name="context">{}</field>
+    </record>
+
+    <!-- Tree View for Study Group -->
+    <record id="view_study_group_tree" model="ir.ui.view">
+        <field name="name">hnn_drive_school.study_group.tree</field>
+        <field name="model">hnn_drive_school.study_group</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="status"/>
+                <field name="name"/>
+                <field name="category_full_name" string="Category Name"/>
+                <field name="start_date"/>
+                <field name="end_date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_study_group_calendar" model="ir.ui.view">
+        <field name="name">study.group.calendar</field>
+        <field name="model">hnn_drive_school.study_group</field>
+        <field name="arch" type="xml">
+            <calendar string="Study Groups Calendar" date_start="start_date" date_stop="end_date" color="status">
+                <field name="name"/>
+                <!-- <field name="category_id"/> -->
+                <field name="category_full_name"/>
+                <field name="teacher_instructor_id"/>
+                <field name="driving_instructor_id"/>
+                <field name="medical_instructor_id"/>
+            </calendar>
+        </field>
+    </record>
+
+    <!-- Form View for Study Group -->
+    <record id="view_study_group_form" model="ir.ui.view">
+        <field name="name">hnn_drive_school.study_group.form</field>
+        <field name="model">hnn_drive_school.study_group</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <header>
+                        <field name="status"
+                        widget="statusbar"
+                        options="{'clickable': '1'}"
+                        />
+                    </header>
+                    <group>
+                        <field name="name"/>
+                        <field name="category_full_name" string="Category Name" readonly="1"/>
+                        <field name="category_id"/>
+                        <field name="start_date"/>
+                        <field name="end_date"/>
+                    </group>
+                    <notebook>
+                        <page name="students" string="Students">
+                            <group>
+                                <field name="student_ids"/>
+                            </group>
+                        </page>
+                        <page name="teachers" string="Teachers">
+                            <group>
+                                <field name="teacher_instructor_id" string="Teacher"/>
+                                <field name="medical_instructor_id"/>
+                                <field name="driving_instructor_id"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+                <div class="oe_chatter_position_right">
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids" widget="mail_followers"/>
+                        <field name="message_ids" widget="mail_thread"/>
+                    </div>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_study_group_search" model="ir.ui.view">
+        <field name="name">hnn_drive_school.study_group.search</field>
+        <field name="model">hnn_drive_school.study_group</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name" string="Group name"/>
+                <field name="category_id" string="Group category" operator="ilike"/>
+                <field name="teacher_instructor_id" string="Teacher Instructor"/>
+                <field name="medical_instructor_id" string="Medical Instructor"/>
+                <field name="driving_instructor_id" string="Driving Instructor"/>
+                <field name="student_last_name" string="Student last name"/>
+                <field name="student_phone" string="Student Phone" operator="ilike"/>
+                <field name="student_passport_info" string="Student Passport Info"  operator="ilike"/>
+                <filter name="status_registration" string="Registration" domain="[('status', '=', 'registration')]"/>
+                <filter name="status_confirmed" string="Confirmed" domain="[('status', '=', 'confirmed')]"/>
+                <filter name="status_closed" string="Closed" domain="[('status', '=', 'closed')]"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="view_study_group_kanban" model="ir.ui.view">
+        <field name="name">hnn_drive_school.study_group.kanban</field>
+        <field name="model">hnn_drive_school.study_group</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_example" default_group_by="status" quick_create="false" create="true">
+                <field name="status"/>
+                <field name="name"/>
+                <field name="teacher_instructor_id"/>
+                <field name="medical_instructor_id"/>
+                <field name="driving_instructor_id"/>
+                <templates>
+                    <t t-name="kanban-menu">
+                        <t t-if="widget.editable"><a role="menuitem" type="edit" class="dropdown-item">Edit</a></t>
+                        <t t-if="widget.deletable"><a role="menuitem" type="delete" class="dropdown-item">Delete</a></t>
+                        <ul class="oe_kanban_colorpicker" data-field="color"/>
+                    </t>
+                    <t t-name="kanban-box">
+                        <div style="position: relative" class="oe_kanban_global_click">
+                            <div>
+                                <div class="o_kanban_record_title">
+                                    <field name="name"/>
+                                    <span>
+                                        <strong> Category: </strong>
+                                        <t t-if="record.category_id.raw_value"><field name="category_id"/></t>
+                                    </span>
+                                    <div class="o_kanban_details">
+
+                                        <span class="text-muted">
+                                            <br/>
+                                            <strong>Teacher:</strong>
+                                            <t t-if="record.category_id.raw_value"><field name="teacher_instructor_id"/></t>
+                                            <br/>
+                                        </span>
+                                        <span class="text-muted">
+                                            <strong>Driver:</strong>
+                                            <t t-if="record.category_id.raw_value"><field name="driving_instructor_id"/></t>
+                                            <br/>
+                                        </span>
+                                        <span class="text-muted">
+                                            <strong>Medicine:</strong>
+                                            <t t-if="record.category_id.raw_value"><field name="medical_instructor_id"/></t>
+                                        </span>
+                                    </div>
+                                </div>
+                                <br/>
+                                <br/>
+                                <strong>Students:</strong>
+                                <div class="o_kanban_record_bottom">
+                                    <field name="student_ids" widget="many2many_tags"/>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+                 <group by="category_id"/>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_study_group_pivot" model="ir.ui.view">
+        <field name="name">hnn_drive_school.study_group.pivot</field>
+        <field name="model">hnn_drive_school.study_group</field>
+        <field name="priority">50</field>
+        <field name="arch" type="xml">
+            <pivot sample="1" disable_linking="1" display_quantity="1">
+                <field name="start_date" interval="year" type="col"/>
+                <field name="start_date" interval="month" type="col"/>
+                <field name="name" type="row"/>
+                <field name="student_ids" type="row"/>
+            </pivot>
+        </field>
+    </record>
+
+</odoo>
