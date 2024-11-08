@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-08 09:56+0000\n"
-"PO-Revision-Date: 2024-11-08 09:56+0000\n"
+"POT-Creation-Date: 2024-11-08 18:24+0000\n"
+"PO-Revision-Date: 2024-11-08 18:24+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -129,7 +129,7 @@ msgstr "<strong>Медицина:</strong>"
 #. module: hnn_drive_school
 #: model:ir.model.fields.selection,name:hnn_drive_school.selection__hnn_drive_school_student__blood_type__ab
 msgid "AB"
-msgstr "AB"
+msgstr ""
 
 #. module: hnn_drive_school
 #: model:ir.model,name:hnn_drive_school.model_hnn_drive_school_person
@@ -232,20 +232,14 @@ msgstr "Вантаж, понад 7500 кг"
 msgid "Cars up to 3500kg, 8 seats"
 msgstr "Автомобілі до 3500 кг, 8 місць"
 
-#. module:hnn_drive_school
-#: model:hnn_drive_school.category,description:hnn_drive_school.category_b
-msgid ""
-"Cars with weight up to 3500kg and seating capacity (excluding driver) not "
-"exceeding 8 seats"
-msgstr ""
-"Автомобілі вагою до 3500 кг і кількістю місць (без урахування водія) не більше 8 місць"
-
 #. module: hnn_drive_school
 #: model:hnn_drive_school.category,description:hnn_drive_school.category_b
 msgid ""
 "Cars with weight up to 3500kg and seating capacity (excluding driver) up to "
 "8"
-msgstr "Автомобілі вагою до 3500 кг і кількістю місць (без урахування водія) не більше 8"
+msgstr ""
+"Автомобілі вагою до 3500 кг і кількістю місць (без урахування водія) не "
+"більше 8"
 
 #. module: hnn_drive_school
 #: model:ir.actions.act_window,name:hnn_drive_school.action_hnn_drive_school_category
@@ -259,6 +253,11 @@ msgstr "Категорії"
 #: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__category_id
 msgid "Category"
 msgstr "Категорія"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__category_detail
+msgid "Category Detail"
+msgstr "Деталі категорї"
 
 #. module: hnn_drive_school
 #: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__category_full_name
@@ -293,27 +292,37 @@ msgstr "Комбіновані транспортні засоби"
 msgid ""
 "Combination vehicles where the towing vehicle belongs to categories B, C1, "
 "C, D1 or D"
-msgstr "Комбіновані транспортні засоби, де буксирувальний автомобіль належить до категорій B, C1, C, D1 або D"
+msgstr ""
+"Комбіновані транспортні засоби, де буксирувальний автомобіль належить до "
+"категорій B, C1, C, D1 або D"
 
 #. module: hnn_drive_school
 #: model:hnn_drive_school.category,description:hnn_drive_school.category_ce
 msgid "Combination vehicles where the towing vehicle belongs to category C"
-msgstr "Комбіновані транспортні засоби, де буксирувальний автомобіль належить до категорії C"
+msgstr ""
+"Комбіновані транспортні засоби, де буксирувальний автомобіль належить до "
+"категорії C"
 
 #. module: hnn_drive_school
 #: model:hnn_drive_school.category,description:hnn_drive_school.category_c1e
 msgid "Combination vehicles where the towing vehicle belongs to category C1"
-msgstr "Комбіновані транспортні засоби, де буксирувальний автомобіль належить до категорії C1"
+msgstr ""
+"Комбіновані транспортні засоби, де буксирувальний автомобіль належить до "
+"категорії C1"
 
 #. module: hnn_drive_school
 #: model:hnn_drive_school.category,description:hnn_drive_school.category_de
 msgid "Combination vehicles where the towing vehicle belongs to category D"
-msgstr "Комбіновані транспортні засоби, де буксирувальний автомобіль належить до категорії D"
+msgstr ""
+"Комбіновані транспортні засоби, де буксирувальний автомобіль належить до "
+"категорії D"
 
 #. module: hnn_drive_school
 #: model:hnn_drive_school.category,description:hnn_drive_school.category_d1e
 msgid "Combination vehicles where the towing vehicle belongs to category D1"
-msgstr "Комбіновані транспортні засоби, де буксирувальний автомобіль належить до категорії D1"
+msgstr ""
+"Комбіновані транспортні засоби, де буксирувальний автомобіль належить до "
+"категорії D1"
 
 #. module: hnn_drive_school
 #: model:hnn_drive_school.category,detail:hnn_drive_school.category_ce
@@ -409,7 +418,13 @@ msgstr "Опис"
 #. module: hnn_drive_school
 #: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__detail
 msgid "Detail"
-msgstr "Деталі"
+msgstr "Детально"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_form
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_tree
+msgid "Details"
+msgstr "Детально"
 
 #. module: hnn_drive_school
 #: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__display_name
@@ -549,6 +564,12 @@ msgstr "Повна назва"
 #: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_group_report_wizard_form
 msgid "Generate Report"
 msgstr "Генерувати звіт"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_teacher_form
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_teacher_tree
+msgid "Generate group report"
+msgstr "Генерувати звіт по групі"
 
 #. module: hnn_drive_school
 #: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_group_report_wizard_form
@@ -800,17 +821,6 @@ msgid "Phone number"
 msgstr "Номер телефону"
 
 #. module: hnn_drive_school
-#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_teacher_form
-#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_teacher_tree
-msgid "Print Group Report"
-msgstr "Друк звіту групи"
-
-#. module: hnn_drive_school
-#: model:ir.actions.act_window,name:hnn_drive_school.action_group_report_wizard
-msgid "Print3 study group Report"
-msgstr "Друк звіту про навчальну групу 3"
-
-#. module: hnn_drive_school
 #: model:ir.model.fields.selection,name:hnn_drive_school.selection__group_report_wizard__status__registration
 #: model:ir.model.fields.selection,name:hnn_drive_school.selection__hnn_drive_school_study_group__status__registration
 #: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_search
@@ -910,9 +920,9 @@ msgid "Study Groups as Teacher"
 msgstr "Навчальні групи як викладач"
 
 #. module: hnn_drive_school
-#: model:ir.actions.act_window,name:hnn_drive_school.action_group_report_wizard_run
+#: model:ir.actions.act_window,name:hnn_drive_school.action_group_report_wizard
 msgid "Study group Report"
-msgstr "Звіт про навчальну групу"
+msgstr "Друк звіту про навчальну групу 3"
 
 #. module: hnn_drive_school
 #: model:ir.actions.act_window,name:hnn_drive_school.action_hnn_drive_school_study_group
@@ -972,7 +982,8 @@ msgid ""
 "Three- or four-wheel vehicles (quad bikes, tricycles, motorcycles with a "
 "trailer, etc.) with weight up to 400kg"
 msgstr ""
-"Транспортні засоби на трьох або чотирьох колесах (квадроцикли, трицикли, мотоцикли з причепом тощо) з вагою до 400 кг"
+"Транспортні засоби на трьох або чотирьох колесах (квадроцикли, трицикли, "
+"мотоцикли з причепом тощо) з вагою до 400 кг"
 
 #. module: hnn_drive_school
 #: model:hnn_drive_school.category,description:hnn_drive_school.category_t
@@ -995,7 +1006,8 @@ msgid ""
 "Two-wheel vehicles (mopeds, scooters, etc.) with engine capacity up to 50cc "
 "or electric motor power up to 4kW"
 msgstr ""
-"Двоколісні транспортні засоби (мопеди, скутери тощо) з об'ємом двигуна до 50 см³ або потужністю електродвигуна до 4 кВт"
+"Двоколісні транспортні засоби (мопеди, скутери тощо) з об'ємом двигуна до 50"
+" см³ або потужністю електродвигуна до 4 кВт"
 
 #. module: hnn_drive_school
 #: model:hnn_drive_school.category,description:hnn_drive_school.category_a
@@ -1003,7 +1015,8 @@ msgid ""
 "Two-wheel vehicles (motorcycles, etc.) with engine capacity of 50cc or more,"
 " or electric motor power of 4kW or more"
 msgstr ""
-"Двоколісні транспортні засоби (мотоцикли тощо) з об'ємом двигуна 50 см³ або більше, або потужністю електродвигуна 4 кВт або більше"
+"Двоколісні транспортні засоби (мотоцикли тощо) з об'ємом двигуна 50 см³ або "
+"більше, або потужністю електродвигуна 4 кВт або більше"
 
 #. module: hnn_drive_school
 #: model:hnn_drive_school.category,detail:hnn_drive_school.category_a

@@ -15,6 +15,7 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="full_name"/>
+                <field name="detail"/>
                 <field name="training_days"/>
                 <field name="description" optional="hide"/>
                 <field name="minimal_age" optional="hide"/>
@@ -31,12 +32,14 @@
             <kanban class="o_kanban_example" default_group_by="training_days">
                 <field name="training_days"/>
                 <field name="full_name"/>
+                <field name="detail"/>
                 <templates>
                     <t t-name="kanban-box">
                         <div style="position: relative" class="oe_kanban_global_click">
                             <div>
                                 <div class="o_kanban_record_title">
                                     <field name="full_name"/>
+                                    <field name="detail"/>
                                     <div class="o_kanban_details float-end">
                                         <span class="text-muted">
                                             <t t-if="record.training_days.raw_value"><field name="training_days"/></t>

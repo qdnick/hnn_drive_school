@@ -23,13 +23,13 @@
     <menuitem id="menu_hnn_drive_school_category" 
               name="Categories" 
               parent="menu_hnn_drive_school_root" 
-              sequence="30" 
+              sequence="40" 
               action="action_hnn_drive_school_category"/>
 
     <menuitem id="menu_hnn_drive_school_study_group" 
               name="Study Groups" 
               parent="menu_hnn_drive_school_root" 
-              sequence="40" 
+              sequence="30" 
               action="action_hnn_drive_school_study_group"/>
 
 </odoo>

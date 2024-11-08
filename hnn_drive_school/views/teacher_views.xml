@@ -9,16 +9,15 @@
         <field name="context">{}</field>
     </record>
 
-    <record id="action_group_report_wizard" model="ir.actions.act_window">
-        <field name="name">Print3 study group Report</field>
+    <!-- <record id="action_group_report_wizard" model="ir.actions.act_window">
+        <field name="name">Generate study group report</field>
         <field name="res_model">group.report.wizard</field>
         <field name="view_mode">form</field>
-        <!-- <field name="target">current</field> -->
         <field name="target">new</field>
         <field name="binding_model_id" ref="model_hnn_drive_school_study_group"/>
         <field name="binding_view_types">list,form</field>
         <field name="binding_type">report</field>
-    </record>
+    </record> -->
 
     <!-- Tree View for Teacher -->
     <record id="view_teacher_tree" model="ir.ui.view">
@@ -32,10 +31,10 @@
             >
                 <header>
                     <button name="%(action_group_report_wizard)d"
-                        string="Print Group Report"
+                        string="Generate group report"
                         type="action"
                         class="btn-primary"
-                        icon="fa-print"
+                        icon="fa-bars"
                         display="always"
                     />
                 </header>
@@ -53,10 +52,10 @@
             <form>
                 <header>
                     <button name="%(action_group_report_wizard)d"
-                        string="Print Group Report"
+                        string="Generate group report"
                         type="action"
                         class="btn-primary"
-                        icon="fa-print"
+                        icon="fa-bars"
                         display="always"
                     />
                 </header>

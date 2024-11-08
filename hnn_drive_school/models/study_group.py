@@ -94,7 +94,6 @@ class StudyGroup(models.Model):
         related="category_id.detail",
         string="Category Detail",
         readonly=True,
-        required=True,
     )
 
     category_full_name = fields.Char(
@@ -270,10 +269,4 @@ class StudyGroup(models.Model):
                             status 'Confirmed' or 'Closed'."""
                         )
                     )
-            # elif record.status == "registration":
-            #     # check user role
-            #     if self.env.user.has_group(
-            #         "hnn_drive_school.group_hnn_drive_school_user"
-            #     ):
-            #         pass
         return super(StudyGroup, self).write(vals)

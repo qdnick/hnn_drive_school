@@ -18,6 +18,7 @@
                 <field name="status"/>
                 <field name="name"/>
                 <field name="category_full_name" string="Category Name"/>
+                <field name="category_detail" string="Details"/>
                 <field name="start_date"/>
                 <field name="end_date"/>
             </tree>
@@ -31,6 +32,7 @@
             <calendar string="Study Groups Calendar" date_start="start_date" date_stop="end_date" color="status">
                 <field name="name"/>
                 <field name="category_full_name"/>
+                <field name="category_detail"/>
                 <field name="teacher_instructor_id"/>
                 <field name="driving_instructor_id"/>
                 <field name="medical_instructor_id"/>
@@ -54,6 +56,7 @@
                     <group>
                         <field name="name"/>
                         <field name="category_full_name" string="Category Name" readonly="1"/>
+                        <field name="category_detail" string="Details" readonly="1"/>
                         <field name="category_id"/>
                         <field name="start_date"/>
                         <field name="end_date"/>
