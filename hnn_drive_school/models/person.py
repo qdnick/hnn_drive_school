@@ -1,8 +1,8 @@
 """
-Base Person model for managing 
+Base Person model for managing
 personal information in the drive school.
 
-This abstract model serves as 
+This abstract model serves as
 a base for all person-related entities.
 
 Attributes:
@@ -11,13 +11,13 @@ Attributes:
     last_name (str): Last name of the person.
     phone (str): Phone number of the person.
     birth_date (date): Birth date of the person.
-    passport_info (str): Information related to 
+    passport_info (str): Information related to
     the person's passport.
     tax_id_code (str): Tax ID code of the person.
     drivers_license (str): Driver's license number of the person.
-    drivers_license_date_of_issue (date): Date of issue for 
+    drivers_license_date_of_issue (date): Date of issue for
     the driver's license.
-    user_id (Many2one): Reference to the user 
+    user_id (Many2one): Reference to the user
     associated with this person.
 """
 
@@ -58,6 +58,5 @@ class Person(models.AbstractModel):
         """Compute the display name by concatenating
         the last name, first name, and second name."""
         for rec in self:
-            rec.display_name = (
-                f'{rec.last_name or ""} {rec.first_name or ""} {rec.second_name or ""}'
-            )
+            rec.display_name = f'{rec.last_name or ""} {rec.first_name or ""} \
+                    {rec.second_name or ""}'

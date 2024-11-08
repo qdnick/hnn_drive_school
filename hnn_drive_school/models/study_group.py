@@ -1,16 +1,16 @@
 """
-This module manages the study groups within the HNN Drive School, 
-facilitating the organization and administration of driving 
-instruction courses. It enables the creation and management of 
-study groups, linking them to categories, students, and 
+This module manages the study groups within the HNN Drive School,
+facilitating the organization and administration of driving
+instruction courses. It enables the creation and management of
+study groups, linking them to categories, students, and
 instructors.
 """
 
+import logging
+from datetime import timedelta, date
 from odoo import models, fields, api, _
-from datetime import datetime, timedelta, date
 from odoo.exceptions import ValidationError, UserError
 
-import logging
 
 _logger = logging.getLogger(__name__)
 
@@ -31,12 +31,12 @@ class StudyGroup(models.Model):
 
     name = fields.Char(string="Group number")
 
-    color = fields.Integer("Color")
+    color = fields.Integer()
+    # color = fields.Integer("Color")
 
     category_id = fields.Many2one(
         "hnn_drive_school.category",
         string="Category",
-        required=True,
     )
 
     student_ids = fields.Many2many(
@@ -90,17 +90,25 @@ class StudyGroup(models.Model):
         required=True,
     )
 
+    category_detail = fields.Char(
+        related="category_id.detail",
+        string="Category Detail",
+        readonly=True,
+        required=True,
+    )
+
     category_full_name = fields.Char(
         related="category_id.full_name",
         string="Category Full Name",
         readonly=True,
+        required=True,
     )
 
     start_date = fields.Date()
 
     end_date = fields.Date(
         compute="_compute_end_date",
-        inverse="_set_end_date",
+        inverse="_inverse_set_end_date",
         store=True,
     )
 
@@ -149,14 +157,14 @@ class StudyGroup(models.Model):
             group.end_date = group.end_date
 
     # add inverse metod for changed end_date
-    def _set_end_date(self):
+    def _inverse_set_end_date(self):
         """
         Placeholder method for inverse calculation of end_date.
 
         This method is intended to allow updates to the end_date
         but is currently not implemented.
         """
-        pass
+        # pass
 
     @api.constrains("student_ids")
     def _check_student_minimal_age(self):
@@ -177,8 +185,11 @@ class StudyGroup(models.Model):
                     if student_age < min_minimal_age:
                         raise ValidationError(
                             _(
-                                f"Student '{student.last_name}' does not meet the age requirement of {min_minimal_age} years "
-                                f"for the category '{group.category_id.name}'."
+                                f"Student '{student.last_name}\
+                                    ' does not meet the age requirement\
+                                        of {min_minimal_age} years "
+                                f"for the category \
+                                    '{group.category_id.name}'."
                             )
                         )
 
@@ -255,7 +266,8 @@ class StudyGroup(models.Model):
                 ):
                     raise UserError(
                         _(
-                            "You cannot modify a group with status 'Confirmed' or 'Closed'."
+                            """You cannot modify a group with
+                            status 'Confirmed' or 'Closed'."""
                         )
                     )
             # elif record.status == "registration":

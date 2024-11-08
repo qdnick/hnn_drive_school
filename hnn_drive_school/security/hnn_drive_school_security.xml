@@ -1,26 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<odoo>
+<odoo  noupdate="1">
 
-    <data noupdate="1">
+    <!-- category -->
+    <record id="manage_status_group" model="ir.module.category">
+        <field name="name">Manage status group</field>
+        <field name="description">User access levels for change group status</field>
+        <field name="sequence">1</field>
+    </record>
 
-        <!-- category -->
-        <record id="manage_status_group" model="ir.module.category">
-            <field name="name">Manage status group</field>
-            <field name="description">User access levels for change group status</field>
-            <field name="sequence">1</field>
-        </record>
-
-        <!-- manager -->
-        <record id="group_hnn_drive_school_manager" model="res.groups">
-            <field name="name">Drive School Manager</field>
-            <field name="category_id" ref="manage_status_group"/>
-        </record>
-        <!-- user -->
-        <record id="group_hnn_drive_school_user" model="res.groups">
-            <field name="name">Drive School User</field>
-            <field name="category_id" ref="manage_status_group"/>
-        </record>
-    </data>
+    <!-- manager -->
+    <record id="group_hnn_drive_school_manager" model="res.groups">
+        <field name="name">Drive School Manager</field>
+        <field name="category_id" ref="manage_status_group"/>
+    </record>
+    <!-- user -->
+    <record id="group_hnn_drive_school_user" model="res.groups">
+        <field name="name">Drive School User</field>
+        <field name="category_id" ref="manage_status_group"/>
+    </record>
 
 </odoo>

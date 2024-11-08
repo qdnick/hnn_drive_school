@@ -1,0 +1,1037 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* hnn_drive_school
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-11-08 09:56+0000\n"
+"PO-Revision-Date: 2024-11-08 09:56+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__tax_id_code
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__tax_id_code
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__tax_id_code
+msgid " Tax ID Code"
+msgstr " ІНН"
+
+#. module: hnn_drive_school
+#: model:ir.actions.report,print_report_name:hnn_drive_school.hnn_drive_school_student_report
+#: model:ir.actions.report,print_report_name:hnn_drive_school.hnn_drive_school_study_group_report
+#: model:ir.actions.report,print_report_name:hnn_drive_school.hnn_drive_school_teacher_report
+msgid "(object._get_report_base_filename())"
+msgstr ""
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_kanban
+msgid ""
+"<br/>\n"
+"                                            <strong>Teacher:</strong>"
+msgstr ""
+"<br/>\n"
+"                                            <strong>Вчитель:</strong>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_study_group_template
+msgid ""
+"<br/>\n"
+"                                        <span>Group period: from </span>"
+msgstr ""
+"<br/>\n"
+"                                        <span>Період групи : з </span>"
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_study_group_template
+msgid ""
+"<br/>\n"
+"                                        <span>Group status: </span>"
+msgstr ""
+"<br/>\n"
+"                                        <span>Статус групи: </span>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_study_group_template
+msgid ""
+"<br/>\n"
+"                                    <strong><span>Group students: </span></strong>"
+msgstr ""
+"<br/>\n"
+"                                    <strong><span>Студенти групи: </span></strong>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_kanban
+msgid ""
+"<br/>\n"
+"                                <br/>\n"
+"                                <strong>Students:</strong>"
+msgstr ""
+"<br/>\n"
+"                                <br/>\n"
+"                                <strong>Студенти:</strong>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_teacher_template
+msgid "<span style=\"background-color:green;\">Driving Instructor</span>"
+msgstr "<span style=\"background-color:green;\">Інструктор з водіння</span>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_teacher_template
+msgid "<span style=\"background-color:red;\">Medical Instructor</span>"
+msgstr "<span style=\"background-color:red;\">Медичний інструктор</span>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_teacher_template
+msgid "<span style=\"background-color:yellow;\">Teacher Instructor</span>"
+msgstr "<span style=\"background-color:yellow;\">Викладач-інструктор</span>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_teacher_template
+msgid "<span> - </span>"
+msgstr "<span> - </span>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_study_group_template
+msgid "<span> to </span>"
+msgstr "<span> до </span>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_study_group_template
+msgid "<span>Group category: </span>"
+msgstr "<span>Категорія групи: </span>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_study_group_template
+msgid "<span>Group name: </span>"
+msgstr "<span>Назва групи: </span>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_kanban
+msgid "<strong> Category: </strong>"
+msgstr "<strong> Категорія: </strong>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_kanban
+msgid "<strong>Driver:</strong>"
+msgstr "<strong>Водій:</strong>"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_kanban
+msgid "<strong>Medicine:</strong>"
+msgstr "<strong>Медицина:</strong>"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields.selection,name:hnn_drive_school.selection__hnn_drive_school_student__blood_type__ab
+msgid "AB"
+msgstr "AB"
+
+#. module: hnn_drive_school
+#: model:ir.model,name:hnn_drive_school.model_hnn_drive_school_person
+msgid "Abstract Person"
+msgstr "Абстрактна особа"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__message_needaction
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__message_needaction
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__message_needaction
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__message_needaction
+msgid "Action Needed"
+msgstr "Потрібна дія"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__age
+msgid "Age"
+msgstr "Вік"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__all_study_groups
+msgid "All Study Groups"
+msgstr "Усі навчальні групи"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__message_attachment_count
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__message_attachment_count
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__message_attachment_count
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__message_attachment_count
+msgid "Attachment Count"
+msgstr "Кількість вкладень"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__birth_date
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__birth_date
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__birth_date
+msgid "Birth Date"
+msgstr "Дата народження"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__blood_type
+msgid "Blood Type"
+msgstr "Група крові"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_d
+msgid "Bus, over 16 seats"
+msgstr "Автобус, більше 16 місць"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_d1
+msgid "Bus, up to 16 seats"
+msgstr "Автобус, до 16 місць"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_d
+msgid ""
+"Buses with seating capacity over 16 (excluding driver), intended for "
+"passenger transportation"
+msgstr ""
+"Автобуси з кількістю місць понад 16 (без урахування водія), призначені для "
+"перевезення пасажирів"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_d1
+msgid ""
+"Buses with seating capacity up to 16 (excluding driver), intended for "
+"passenger transportation"
+msgstr ""
+"Автобуси з кількістю місць до 16 (без урахування водія), призначені для "
+"перевезення пасажирів"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_group_report_wizard_form
+msgid "Cancel"
+msgstr "Скасувати"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_c1
+msgid "Cargo vehicles weighing between 3500 and 7500kg"
+msgstr "Вантажні автомобілі вагою від 3500 до 7500 кг"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_c
+msgid "Cargo vehicles weighing over 7500kg"
+msgstr "Вантажні автомобілі вагою понад 7500 кг"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_c1
+msgid "Cargo, 3500-7500kg"
+msgstr "Вантаж, 3500-7500 кг"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_c
+msgid "Cargo, over 7500kg"
+msgstr "Вантаж, понад 7500 кг"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_b
+msgid "Cars up to 3500kg, 8 seats"
+msgstr "Автомобілі до 3500 кг, 8 місць"
+
+#. module:hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_b
+msgid ""
+"Cars with weight up to 3500kg and seating capacity (excluding driver) not "
+"exceeding 8 seats"
+msgstr ""
+"Автомобілі вагою до 3500 кг і кількістю місць (без урахування водія) не більше 8 місць"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_b
+msgid ""
+"Cars with weight up to 3500kg and seating capacity (excluding driver) up to "
+"8"
+msgstr "Автомобілі вагою до 3500 кг і кількістю місць (без урахування водія) не більше 8"
+
+#. module: hnn_drive_school
+#: model:ir.actions.act_window,name:hnn_drive_school.action_hnn_drive_school_category
+#: model:ir.ui.menu,name:hnn_drive_school.menu_hnn_drive_school_category
+msgid "Categories"
+msgstr "Категорії"
+
+#. module: hnn_drive_school
+#: model:ir.model,name:hnn_drive_school.model_hnn_drive_school_category
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__category_id
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__category_id
+msgid "Category"
+msgstr "Категорія"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__category_full_name
+msgid "Category Full Name"
+msgstr "Повна назва категорії"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_form
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_tree
+msgid "Category Name"
+msgstr "Назва категорії"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields.selection,name:hnn_drive_school.selection__group_report_wizard__status__closed
+#: model:ir.model.fields.selection,name:hnn_drive_school.selection__hnn_drive_school_study_group__status__closed
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_search
+msgid "Closed"
+msgstr "Закрито"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__color
+msgid "Color"
+msgstr "Колір"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_be
+msgid "Combination vehicles"
+msgstr "Комбіновані транспортні засоби"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_be
+msgid ""
+"Combination vehicles where the towing vehicle belongs to categories B, C1, "
+"C, D1 or D"
+msgstr "Комбіновані транспортні засоби, де буксирувальний автомобіль належить до категорій B, C1, C, D1 або D"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_ce
+msgid "Combination vehicles where the towing vehicle belongs to category C"
+msgstr "Комбіновані транспортні засоби, де буксирувальний автомобіль належить до категорії C"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_c1e
+msgid "Combination vehicles where the towing vehicle belongs to category C1"
+msgstr "Комбіновані транспортні засоби, де буксирувальний автомобіль належить до категорії C1"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_de
+msgid "Combination vehicles where the towing vehicle belongs to category D"
+msgstr "Комбіновані транспортні засоби, де буксирувальний автомобіль належить до категорії D"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_d1e
+msgid "Combination vehicles where the towing vehicle belongs to category D1"
+msgstr "Комбіновані транспортні засоби, де буксирувальний автомобіль належить до категорії D1"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_ce
+msgid "Combination vehicles, Category C"
+msgstr "Комбіновані транспортні засоби, Категорія C"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_c1e
+msgid "Combination vehicles, Category C1"
+msgstr "Комбіновані транспортні засоби, Категорія C1"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_de
+msgid "Combination vehicles, Category D"
+msgstr "Комбіновані транспортні засоби, Категорія D"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_d1e
+msgid "Combination vehicles, Category D1"
+msgstr "Комбіновані транспортні засоби, Категорія D1"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__company_id
+msgid "Company"
+msgstr "Компанія"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields.selection,name:hnn_drive_school.selection__group_report_wizard__status__confirmed
+#: model:ir.model.fields.selection,name:hnn_drive_school.selection__hnn_drive_school_study_group__status__confirmed
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_search
+msgid "Confirmed"
+msgstr "Підтверджено"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__create_uid
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__create_uid
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__create_uid
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__create_uid
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__create_uid
+msgid "Created by"
+msgstr "Створено"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__create_date
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__create_date
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__create_date
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__create_date
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__create_date
+msgid "Created on"
+msgstr "Створено"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_teacher_template
+msgid "Date Printed:"
+msgstr "Дата друку:"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__start_date
+msgid "Date from: "
+msgstr "Дата з:"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_student_form
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_student_tree
+msgid "Date of existence"
+msgstr "Дата існування"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__end_date
+msgid "Date to: "
+msgstr "Дата до:"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_kanban
+msgid "Delete"
+msgstr "Видалити"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_category_form
+msgid "Dependences"
+msgstr "Залежності"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__dependent_category
+msgid "Dependent Category"
+msgstr "Залежна категорія"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__description
+msgid "Description"
+msgstr "Опис"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__detail
+msgid "Detail"
+msgstr "Деталі"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__display_name
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__display_name
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__display_name
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__display_name
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__display_name
+msgid "Display Name"
+msgstr "Відображуванне ім'я"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_study_group_template
+msgid "Display name"
+msgstr "Відображуванне ім'я"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_teacher_form
+msgid "Documents"
+msgstr "Документи"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_student_form
+msgid "Documents info"
+msgstr "Інформація про документи"
+
+#. module: hnn_drive_school
+#: model:ir.ui.menu,name:hnn_drive_school.menu_hnn_drive_school_root
+msgid "Drive School"
+msgstr "Автошкола"
+
+#. module: hnn_drive_school
+#: model:res.groups,name:hnn_drive_school.group_hnn_drive_school_manager
+msgid "Drive School Manager"
+msgstr "Менеджер автошколи"
+
+#. module: hnn_drive_school
+#: model:res.groups,name:hnn_drive_school.group_hnn_drive_school_user
+msgid "Drive School User"
+msgstr "Користувач автошколи"
+
+#. module: hnn_drive_school
+#: model:ir.actions.report,name:hnn_drive_school.hnn_drive_school_student_report
+msgid "Drive school student report"
+msgstr "Звіт про студентів автошколи"
+
+#. module: hnn_drive_school
+#: model:ir.actions.report,name:hnn_drive_school.hnn_drive_school_study_group_report
+msgid "Drive school study_group report"
+msgstr "Звіт про групи автошколи"
+
+#. module: hnn_drive_school
+#: model:ir.actions.report,name:hnn_drive_school.hnn_drive_school_teacher_report
+msgid "Drive school teacher report"
+msgstr "Звіт про викладачів автошколи"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__drivers_license
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__drivers_license
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__drivers_license
+msgid "Driver's License"
+msgstr "Водійське посвідчення"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__drivers_license_date_of_existence
+msgid "Drivers License Date Of Existence"
+msgstr "Період дії водійського посвідчення"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__drivers_license_date_of_issue
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__drivers_license_date_of_issue
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__drivers_license_date_of_issue
+msgid "Drivers License Date Of Issue"
+msgstr "Дата видачі водійського посвідчення"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__driving_instructor_id
+#: model:ir.model.fields.selection,name:hnn_drive_school.selection__hnn_drive_school_teacher__types_of_instructors__driving_instructor
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_search
+msgid "Driving Instructor"
+msgstr "Інструктор з водіння"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__driving_instructor_id
+msgid "Driving instructor: "
+msgstr "Інструктор з водіння:"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_kanban
+msgid "Edit"
+msgstr "Редагувати"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__end_date
+msgid "End Date"
+msgstr "Дата завершення"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_student_template
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_teacher_template
+msgid "End date"
+msgstr "Дата завершення"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_student_search
+msgid "Filters"
+msgstr "Фільтри"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__first_name
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__first_name
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__first_name
+msgid "First Name"
+msgstr "Ім'я"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__message_follower_ids
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__message_follower_ids
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__message_follower_ids
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__message_follower_ids
+msgid "Followers"
+msgstr "Підписники"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__message_partner_ids
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__message_partner_ids
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__message_partner_ids
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Підписники (Партнери)"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__full_name
+msgid "Full Name"
+msgstr "Повна назва"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_group_report_wizard_form
+msgid "Generate Report"
+msgstr "Генерувати звіт"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_group_report_wizard_form
+msgid "Group Report Wizard"
+msgstr "Головний візард звіту"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_search
+msgid "Group category"
+msgstr "Категорія групи"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_student_template
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_teacher_template
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_search
+msgid "Group name"
+msgstr "Ім'я групи"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__name
+msgid "Group number"
+msgstr "Номер групи"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__status
+msgid "Group status"
+msgstr "Статус групи"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_student_form
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_teacher_form
+msgid "Groups"
+msgstr "Групи"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_student_template
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_teacher_template
+msgid "Groups:"
+msgstr "Групи:"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__has_message
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__has_message
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__has_message
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__has_message
+msgid "Has Message"
+msgstr "Має повідомлення"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__higher_education_info
+msgid "Higher Education Information"
+msgstr "Інформація про вищу освіту"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__id
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__id
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__id
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__id
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__id
+msgid "ID"
+msgstr "Ідентифікатор"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_person__message_needaction
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_student__message_needaction
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_study_group__message_needaction
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_teacher__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Якщо встановлено, нові повідомлення потребують вашої уваги."
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_person__message_has_error
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_student__message_has_error
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_study_group__message_has_error
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_teacher__message_has_error
+msgid "If checked, some messages have a delivery error."
+msgstr "Якщо встановлено, деякі повідомлення мають помилку доставки."
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__message_is_follower
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__message_is_follower
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__message_is_follower
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__message_is_follower
+msgid "Is Follower"
+msgstr "Є підписником"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__last_name
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__last_name
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__last_name
+msgid "Last Name"
+msgstr "Прізвище"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__write_uid
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__write_uid
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__write_uid
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__write_uid
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__write_uid
+msgid "Last Updated by"
+msgstr "Останнє оновлення користувачем"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__write_date
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__write_date
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__write_date
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__write_date
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__write_date
+msgid "Last Updated on"
+msgstr "Останнє оновлення"
+
+#. module: hnn_drive_school
+#: model:ir.module.category,name:hnn_drive_school.manage_status_group
+msgid "Manage status group"
+msgstr "Управління групою статусів"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__medical_certificate
+msgid "Medical Certificate"
+msgstr "Медичний сертифікат"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__medical_instructor_id
+#: model:ir.model.fields.selection,name:hnn_drive_school.selection__hnn_drive_school_teacher__types_of_instructors__medical_instructor
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_search
+msgid "Medical Instructor"
+msgstr "Медичний інструктор"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_student_form
+msgid "Medical info"
+msgstr "Медична інформація"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__medical_instructor_id
+msgid "Medical instructor: "
+msgstr "Медичний інструктор: "
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__message_has_error
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__message_has_error
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__message_has_error
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__message_has_error
+msgid "Message Delivery error"
+msgstr "Помилка доставки повідомлення"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__message_ids
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__message_ids
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__message_ids
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__message_ids
+msgid "Messages"
+msgstr "Повідомлення"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__minimal_age
+msgid "Minimal Age"
+msgstr "Мінімальний вік"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__minimal_driving_experience
+msgid "Minimal Driving Experience"
+msgstr "Мінімальний водійський стаж"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__name
+msgid "Name"
+msgstr "Назва"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__message_needaction_counter
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__message_needaction_counter
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__message_needaction_counter
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Кількість дій"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_category__training_days
+msgid "Number of Training Days"
+msgstr "Кількість навчальних днів"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__message_has_error_counter
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__message_has_error_counter
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__message_has_error_counter
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__message_has_error_counter
+msgid "Number of errors"
+msgstr "Кількість помилок"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_person__message_needaction_counter
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_student__message_needaction_counter
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_study_group__message_needaction_counter
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_teacher__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Кількість повідомлень, які потребують дій"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_person__message_has_error_counter
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_student__message_has_error_counter
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_study_group__message_has_error_counter
+#: model:ir.model.fields,help:hnn_drive_school.field_hnn_drive_school_teacher__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Кількість повідомлень з помилкою доставки"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_study_group_template
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_student_search
+msgid "Passport"
+msgstr "Паспорт"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__passport_info
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__passport_info
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__passport_info
+msgid "Passport Info"
+msgstr "Інформація про паспорт"
+
+#. module: hnn_drive_school
+#. odoo-python
+#: code:addons/hnn_drive_school/models/student.py:0
+#, python-format
+msgid "Passport Info must be unique."
+msgstr "Інформація про паспорт повинна бути унікальною."
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_teacher_form
+msgid "Personal"
+msgstr "Особисті дані"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_student_search
+msgid "Phone"
+msgstr "Телефон"
+
+#. module: hnn_drive_school
+#. odoo-python
+#: code:addons/hnn_drive_school/models/student.py:0
+#, python-format
+msgid "Phone must be unique."
+msgstr "Телефон повинен бути унікальним."
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__phone
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__phone
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__phone
+msgid "Phone number"
+msgstr "Номер телефону"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_teacher_form
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_teacher_tree
+msgid "Print Group Report"
+msgstr "Друк звіту групи"
+
+#. module: hnn_drive_school
+#: model:ir.actions.act_window,name:hnn_drive_school.action_group_report_wizard
+msgid "Print3 study group Report"
+msgstr "Друк звіту про навчальну групу 3"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields.selection,name:hnn_drive_school.selection__group_report_wizard__status__registration
+#: model:ir.model.fields.selection,name:hnn_drive_school.selection__hnn_drive_school_study_group__status__registration
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_search
+msgid "Registration"
+msgstr "Реєстрація"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__second_name
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__second_name
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__second_name
+msgid "Second Name"
+msgstr "По батькові"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__specialist_certificate
+msgid "Specialist Certificate"
+msgstr "Свідоцтво спеціаліста"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__start_date
+msgid "Start Date"
+msgstr "Дата початку"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_student_template
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_teacher_template
+msgid "Start date"
+msgstr "Дата початку"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__status
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_student_template
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_teacher_template
+msgid "Status"
+msgstr "Статус"
+
+#. module: hnn_drive_school
+#: model:ir.model,name:hnn_drive_school.model_hnn_drive_school_student
+msgid "Student"
+msgstr "Студент"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__student_passport_info
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_search
+msgid "Student Passport Info"
+msgstr "Інформація про паспорт студента"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__student_phone
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_search
+msgid "Student Phone"
+msgstr "Телефон студента"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__student_last_name
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_search
+msgid "Student last name"
+msgstr "Призвище студента"
+
+#. module: hnn_drive_school
+#: model:ir.actions.act_window,name:hnn_drive_school.action_hnn_drive_school_student
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__student_ids
+#: model:ir.ui.menu,name:hnn_drive_school.menu_hnn_drive_school_student
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_form
+msgid "Students"
+msgstr "Студенти"
+
+#. module: hnn_drive_school
+#: model:ir.model,name:hnn_drive_school.model_hnn_drive_school_study_group
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__group_ids
+msgid "Study Group"
+msgstr "Навчальна група"
+
+#. module: hnn_drive_school
+#: model:ir.ui.menu,name:hnn_drive_school.menu_hnn_drive_school_study_group
+msgid "Study Groups"
+msgstr "Навчальні групи"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_calendar
+msgid "Study Groups Calendar"
+msgstr "Календар навчальних груп"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__study_groups_as_driving_instructor
+msgid "Study Groups as Driving Instructor"
+msgstr "Навчальні групи як інструктор з водіння"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__study_groups_as_medical_instructor
+msgid "Study Groups as Medical Instructor"
+msgstr "Навчальні групи як медичний інструктор"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__study_groups_as_teacher
+msgid "Study Groups as Teacher"
+msgstr "Навчальні групи як викладач"
+
+#. module: hnn_drive_school
+#: model:ir.actions.act_window,name:hnn_drive_school.action_group_report_wizard_run
+msgid "Study group Report"
+msgstr "Звіт про навчальну групу"
+
+#. module: hnn_drive_school
+#: model:ir.actions.act_window,name:hnn_drive_school.action_hnn_drive_school_study_group
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_student_form
+msgid "Study groups"
+msgstr "Навчальні групи"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_student_search
+msgid "Tax ID"
+msgstr "Ідентифікаційний код платника податків"
+
+#. module: hnn_drive_school
+#. odoo-python
+#: code:addons/hnn_drive_school/models/student.py:0
+#, python-format
+msgid "Tax ID Code must be unique."
+msgstr "Ідентифікаційний код платника податків повинен бути унікальним."
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_study_group_template
+msgid "Tax id"
+msgstr "Ідентифікаційний код"
+
+#. module: hnn_drive_school
+#: model:ir.model,name:hnn_drive_school.model_hnn_drive_school_teacher
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_study_group__teacher_instructor_id
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_form
+msgid "Teacher"
+msgstr "Викладач"
+
+#. module: hnn_drive_school
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_search
+msgid "Teacher Instructor"
+msgstr "Інструктор викладач"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields.selection,name:hnn_drive_school.selection__hnn_drive_school_teacher__types_of_instructors__teacher_instructor
+msgid "Teacher/Instructor"
+msgstr "Викладач/Інструктор"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_group_report_wizard__teacher_instructor_id
+msgid "Teacher: "
+msgstr "Викладач: "
+
+#. module: hnn_drive_school
+#: model:ir.actions.act_window,name:hnn_drive_school.action_hnn_drive_school_teacher
+#: model:ir.ui.menu,name:hnn_drive_school.menu_hnn_drive_school_teacher
+#: model_terms:ir.ui.view,arch_db:hnn_drive_school.view_study_group_form
+msgid "Teachers"
+msgstr "Викладачі"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_b1
+msgid ""
+"Three- or four-wheel vehicles (quad bikes, tricycles, motorcycles with a "
+"trailer, etc.) with weight up to 400kg"
+msgstr ""
+"Транспортні засоби на трьох або чотирьох колесах (квадроцикли, трицикли, мотоцикли з причепом тощо) з вагою до 400 кг"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_t
+msgid "Trams and trolleybuses"
+msgstr "Трамваї та тролейбуси"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_t
+msgid "Trams and trolleys"
+msgstr "Трамваї та тролейбуси"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_b1
+msgid "Tri- or quad-wheel, up to 400kg"
+msgstr "Три- або чотириколісні, до 400 кг"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_a1
+msgid ""
+"Two-wheel vehicles (mopeds, scooters, etc.) with engine capacity up to 50cc "
+"or electric motor power up to 4kW"
+msgstr ""
+"Двоколісні транспортні засоби (мопеди, скутери тощо) з об'ємом двигуна до 50 см³ або потужністю електродвигуна до 4 кВт"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,description:hnn_drive_school.category_a
+msgid ""
+"Two-wheel vehicles (motorcycles, etc.) with engine capacity of 50cc or more,"
+" or electric motor power of 4kW or more"
+msgstr ""
+"Двоколісні транспортні засоби (мотоцикли тощо) з об'ємом двигуна 50 см³ або більше, або потужністю електродвигуна 4 кВт або більше"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_a
+msgid "Two-wheel, 50cc or 4kW+"
+msgstr "Двоколісні, 50 см³ або 4 кВт і більше"
+
+#. module: hnn_drive_school
+#: model:hnn_drive_school.category,detail:hnn_drive_school.category_a1
+msgid "Two-wheel, up to 50cc or 4kW"
+msgstr "Двоколісні, до 50 см³ або 4 кВт"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__types_of_instructors
+msgid "Types of Instructors/Teachers"
+msgstr "Типи інструкторів/викладачів"
+
+#. module: hnn_drive_school
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_person__user_id
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_student__user_id
+#: model:ir.model.fields,field_description:hnn_drive_school.field_hnn_drive_school_teacher__user_id
+msgid "User"
+msgstr "Користувач"
+
+#. module: hnn_drive_school
+#: model:ir.module.category,description:hnn_drive_school.manage_status_group
+msgid "User access levels for change group status"
+msgstr "Рівні доступу користувачів для зміни статусу групи"
+
+#. module: hnn_drive_school
+#: model:ir.model,name:hnn_drive_school.model_group_report_wizard
+msgid "Wizard for group Report"
+msgstr "Магічний звіт групи"

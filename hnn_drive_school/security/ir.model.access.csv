@@ -1,4 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
 access_hnn_drive_school_person_manager,hnn_drive_school.person.manager,model_hnn_drive_school_person,base.group_user,1,1,1,1
 access_hnn_drive_school_person_user,hnn_drive_school.person.user,model_hnn_drive_school_person,base.group_user,1,0,1,0
 

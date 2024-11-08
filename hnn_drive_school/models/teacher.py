@@ -1,9 +1,9 @@
 """
 Teacher Module for HNN Drive School
 
-This module defines the Teacher model for the HNN Drive School system. 
-It captures all relevant information about instructors, including 
-their qualifications, types of instruction they provide, and the 
+This module defines the Teacher model for the HNN Drive School system.
+It captures all relevant information about instructors, including
+their qualifications, types of instruction they provide, and the
 study groups they are associated with.
 
 """
@@ -29,7 +29,7 @@ class Teacher(models.Model):
 
     _description = "Teacher"
 
-    specialist_certificate = fields.Char(string="Specialist Certificate")
+    specialist_certificate = fields.Char()
     higher_education_info = fields.Char(string="Higher Education Information")
 
     types_of_instructors = fields.Selection(
@@ -69,10 +69,12 @@ class Teacher(models.Model):
     all_study_groups = fields.One2many(
         "hnn_drive_school.study_group",
         compute="_compute_all_study_groups",
-        string="All Study Groups",
     )
 
-    @api.depends("study_groups_as_teacher", "study_groups_as_medical_instructor")
+    @api.depends(
+        "study_groups_as_teacher",
+        "study_groups_as_medical_instructor",
+    )
     def _compute_all_study_groups(self):
         """Computes all study groups associated with the teacher."""
         for teacher in self:

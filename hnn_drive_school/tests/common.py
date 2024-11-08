@@ -12,6 +12,7 @@ class TestCommon(TransactionCase):
                 "first_name": "first_name_student",
                 "second_name": "second_name_student",
                 "last_name": "last_name_student",
+                "birth_date": "2005-03-25",
             }
         )
 

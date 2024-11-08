@@ -9,6 +9,17 @@
         <field name="context">{}</field>
     </record>
 
+    <record id="action_group_report_wizard" model="ir.actions.act_window">
+        <field name="name">Print3 study group Report</field>
+        <field name="res_model">group.report.wizard</field>
+        <field name="view_mode">form</field>
+        <!-- <field name="target">current</field> -->
+        <field name="target">new</field>
+        <field name="binding_model_id" ref="model_hnn_drive_school_study_group"/>
+        <field name="binding_view_types">list,form</field>
+        <field name="binding_type">report</field>
+    </record>
+
     <!-- Tree View for Teacher -->
     <record id="view_teacher_tree" model="ir.ui.view">
         <field name="name">hnn_drive_school.teacher.tree</field>
@@ -124,17 +135,6 @@
                 </templates>
             </kanban>
         </field>
-    </record>
-
-    <record id="action_group_report_wizard" model="ir.actions.act_window">
-        <field name="name">Print study group Report</field>
-        <field name="res_model">group.report.wizard</field>
-        <field name="view_mode">form</field>
-        <!-- <field name="target">current</field> -->
-        <field name="target">new</field>
-        <field name="binding_model_id" ref="model_hnn_drive_school_study_group"/>
-        <field name="binding_view_types">list,form</field>
-        <field name="binding_type">report</field>
     </record>
 
 </odoo>

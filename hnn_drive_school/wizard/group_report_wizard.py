@@ -6,7 +6,7 @@ generate reports on study groups based on selected
 parameters such as status, dates, and teachers.
 """
 
-from odoo import models, fields, api
+from odoo import models, fields
 
 
 class GroupReportWizard(models.TransientModel):
@@ -33,19 +33,19 @@ class GroupReportWizard(models.TransientModel):
 
     teacher_instructor_id = fields.Many2one(
         "hnn_drive_school.teacher",
-        string="Teacher",
+        string="Teacher: ",
         domain="[('types_of_instructors', '=', 'teacher_instructor')]",
     )
 
     medical_instructor_id = fields.Many2one(
         "hnn_drive_school.teacher",
-        string="Teacher",
+        string="Medical instructor: ",
         domain="[('types_of_instructors', '=', 'medical_instructor')]",
     )
 
     driving_instructor_id = fields.Many2one(
         "hnn_drive_school.teacher",
-        string="Teacher",
+        string="Driving instructor: ",
         domain="[('types_of_instructors', '=', 'driving_instructor')]",
     )
 
@@ -58,39 +58,81 @@ class GroupReportWizard(models.TransientModel):
         Filters study groups by status, dates, teachers, and categories
         and returns an action to display the filtered groups.
         """
-        # status filter
-        groups = self.search([])
 
+        domain = []
+
+        # Add filters to domain
         if self.status:
-            groups = groups.filtered(lambda g: g.status == self.status)
+            domain.append(
+                (
+                    "status",
+                    "=",
+                    self.status,
+                )
+            )
 
-        # start date filter
         if self.start_date:
-            groups = groups.filtered(lambda g: g.start_date >= self.start_date)
+            domain.append(
+                (
+                    "start_date",
+                    ">=",
+                    self.start_date,
+                )
+            )
 
-        # end date filter
         if self.end_date:
-            groups = groups.filtered(lambda g: g.end_date <= self.end_date)
+            domain.append(
+                (
+                    "end_date",
+                    "<=",
+                    self.end_date,
+                )
+            )
 
-        # teachers filter
         if self.teacher_instructor_id:
-            groups = groups.filtered(
-                lambda g: g.teacher_instructor_id == self.teacher_instructor_id
+            domain.append(
+                (
+                    "teacher_instructor_id",
+                    "=",
+                    self.teacher_instructor_id.id,
+                )
             )
 
         if self.medical_instructor_id:
-            groups = groups.filtered(
-                lambda g: g.medical_instructor_id == self.medical_instructor_id
+            domain.append(
+                (
+                    "medical_instructor_id",
+                    "=",
+                    self.medical_instructor_id.id,
+                )
             )
 
         if self.driving_instructor_id:
-            groups = groups.filtered(
-                lambda g: g.driving_instructor_id == self.driving_instructor_id
+            domain.append(
+                (
+                    "driving_instructor_id",
+                    "=",
+                    self.driving_instructor_id.id,
+                )
             )
 
-        # category filter
+        # Category filter - only if category is provided
         if self.category_id:
-            groups = groups.filtered(lambda g: g.category_id == self.category_id)
+            domain.append(
+                (
+                    "category_id",
+                    "=",
+                    self.category_id.id,
+                )
+            )
+
+        # If no filter is specified, don't add category filter at all
+        if not self.category_id:
+            # You can add additional logic for default behavior if needed
+            pass
+
+        # Search groups based on domain
+        groups = self.env["hnn_drive_school.study_group"].search(domain)
 
         return {
             "type": "ir.actions.act_window",
@@ -100,3 +142,45 @@ class GroupReportWizard(models.TransientModel):
             "domain": [("id", "in", groups.ids)],
             "target": "current",
         }
+
+    # # status filter
+    # groups = self.search([])
+
+    # if self.status:
+    #     groups = groups.filtered(lambda g: g.status == self.status)
+
+    # # start date filter
+    # if self.start_date:
+    #     groups = groups.filtered(lambda g: g.start_date >= self.start_date)
+
+    # # end date filter
+    # if self.end_date:
+    #     groups = groups.filtered(lambda g: g.end_date <= self.end_date)
+
+    # # teachers filter
+    # if self.teacher_instructor_id:
+    #     groups = groups.filtered(
+    #         lambda g: g.teacher_instructor_id == self.teacher_instructor_id
+    #     )
+
+    # if self.medical_instructor_id:
+    #     groups = groups.filtered(
+    #         lambda g: g.medical_instructor_id == self.medical_instructor_id
+    #     )
+
+    # if self.driving_instructor_id:
+    #     groups = groups.filtered(
+    #         lambda g: g.driving_instructor_id == self.driving_instructor_id
+    #     )
+
+    # if self.category_id:
+    #     groups = groups.filtered(lambda g: g.category_id == self.category_id)
+
+    # return {
+    #     "type": "ir.actions.act_window",
+    #     "name": "Filtered Groups",
+    #     "res_model": "hnn_drive_school.study_group",
+    #     "view_mode": "tree",
+    #     "domain": [("id", "in", groups.ids)],
+    #     "target": "current",
+    # }

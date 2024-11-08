@@ -105,7 +105,6 @@
                 <field name="tax_id_code"/>
                 <field name="phone"/>
                 <field name="last_name"/>
-                <field name="last_name"/>
                 <templates>
                     <t t-name="kanban-box">
                         <div class="oe_kanban_global_click">

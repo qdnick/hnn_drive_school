@@ -1,20 +1,20 @@
 """
 Student Module
 
-This module defines the Student model, 
-which extends the Person model
-and includes specific attributes 
-and methods related to students in the drive school.
+    This module defines the Student model,
+    which extends the Person model
+    and includes specific attributes
+    and methods related to students in the drive school.
 
-Attributes:
-    medical_certificate (str): 
+    Attributes:
+    medical_certificate (str):
     Medical certificate information for the student.
     blood_type (str): The blood type of the student.
-    group_ids (Many2many): Relation to 
+    group_ids (Many2many): Relation to
     the study groups the student is enrolled in.
-    age (int): Computed age of 
+    age (int): Computed age of
     the student based on the birth date.
-    drivers_license_date_of_existence (int): 
+    drivers_license_date_of_existence (int):
     Years since the driver's license was issued.
 """
 
@@ -43,15 +43,16 @@ class Student(models.Model):
     _inherit = "hnn_drive_school.person"
     _description = "Student"
 
-    medical_certificate = fields.Char(string="Medical Certificate")
+    medical_certificate = fields.Char()
     blood_type = fields.Selection(
         [("a", "A"), ("b", "B"), ("ab", "AB"), ("o", "O")],
-        string="Blood Type",
     )
+
     group_ids = fields.Many2many(
         "hnn_drive_school.study_group",
         string="Study Group",
     )
+
     age = fields.Integer(compute="_compute_age")
 
     @api.depends("birth_date")
@@ -64,12 +65,12 @@ class Student(models.Model):
                 student.age = 0
 
     drivers_license_date_of_existence = fields.Integer(
-        compute="_drivers_license_date_of_existence"
+        compute="_compute_drivers_license_date_of_existence"
     )
 
     @api.depends("drivers_license_date_of_issue")
-    def _drivers_license_date_of_existence(self):
-        """Compute the number of years since the driver's license was issued."""
+    def _compute_drivers_license_date_of_existence(self):
+        """Compute existence since the driver's license was issued."""
         for student in self:
             if student.drivers_license_date_of_issue:
                 student.drivers_license_date_of_existence = (
@@ -99,17 +100,25 @@ class Student(models.Model):
                 [("passport_info", "=", vals["passport_info"])]
             )
             if existing_passport:
-                raise exceptions.ValidationError(_("Passport Info must be unique."))
+                raise ValidationError(_("Passport Info must be unique."))
 
         if "phone" in vals:
             existing_phone = self.search([("phone", "=", vals["phone"])])
             if existing_phone:
-                raise exceptions.ValidationError(_("Phone must be unique."))
+                raise ValidationError(_("Phone must be unique."))
 
         if "tax_id_code" in vals:
-            existing_tax_id = self.search([("tax_id_code", "=", vals["tax_id_code"])])
+            existing_tax_id = self.search(
+                [
+                    (
+                        "tax_id_code",
+                        "=",
+                        vals["tax_id_code"],
+                    )
+                ]
+            )
             if existing_tax_id:
-                raise exceptions.ValidationError(_("Tax ID Code must be unique."))
+                raise ValidationError(_("Tax ID Code must be unique."))
 
         return super(Student, self).create(vals)
 

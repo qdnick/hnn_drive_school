@@ -22,11 +22,10 @@
         </field>
     </record>
 
-    <record id="action_group_report_wizard" model="ir.actions.act_window">
+    <record id="action_group_report_wizard_run" model="ir.actions.act_window">
         <field name="name">Study group Report</field>
         <field name="res_model">group.report.wizard</field>
         <field name="view_mode">form</field>
-        <!-- <field name="target">current</field> -->
         <field name="target">new</field>
     </record>
 

@@ -28,19 +28,39 @@ class Category(models.Model):
 
     dependent_category = fields.Many2one(
         "hnn_drive_school.category",
-        string="Dependent Category",
         ondelete="set null",
     )
     minimal_driving_experience = fields.Integer()
 
     full_name = fields.Char(
-        string="Full Name",
         compute="_compute_full_name",
         store=True,
+        # translate=True,
     )
 
     @api.depends("name", "detail")
     def _compute_full_name(self):
-        """Compute the full name by concatenating the name and detail fields."""
+        """Compute the full name by concatenating the name and detail fields"""
         for rec in self:
             rec.full_name = f'{rec.name or ""} {rec.detail or ""}'
+
+    # @api.depends("name", "detail")
+    # def _compute_full_name(self):
+    #     """Compute the full name by concatenating the name and detail fields"""
+    #     for rec in self:
+    #         lang_ids = rec.env["res.lang"].get_installed()
+    #         for lang in lang_ids:
+    #             rec_lang = rec.with_context(lang=lang.code)
+    #             rec_lang.full_name = f'{rec_lang.name or ""} {rec_lang.detail or ""}'
+
+    # @api.model
+    # def create(self, vals):
+    #     record = super().create(vals)
+    #     record._compute_full_name()  # Принудительно вычислить full_name при создании записи
+    #     return record
+
+    # def write(self, vals):
+    #     res = super().write(vals)
+    #     for rec in self:
+    #         rec._compute_full_name()  # Принудительно вычислить full_name при изменении записи
+    #     return res

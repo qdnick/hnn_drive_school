@@ -3,12 +3,12 @@ HNN Drive School Module
 ==================
 
 """
-This module is designed for managing driving school operations, 
-focusing on the organization of study groups, students, and 
-instructors. It provides functionalities to handle group 
-registration, confirmation, and closure processes, while also 
-enforcing various constraints related to student eligibility 
-based on age, driving experience, and licensing requirements.
+  This module is designed for managing driving school operations, 
+  focusing on the organization of study groups, students, and 
+  instructors. It provides functionalities to handle group 
+  registration, confirmation, and closure processes, while also 
+  enforcing various constraints related to student eligibility 
+  based on age, driving experience, and licensing requirements.
 
 Key Features:
 - Manage study groups with specific categories and associated 

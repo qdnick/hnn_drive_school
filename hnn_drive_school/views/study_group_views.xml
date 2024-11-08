@@ -30,7 +30,6 @@
         <field name="arch" type="xml">
             <calendar string="Study Groups Calendar" date_start="start_date" date_stop="end_date" color="status">
                 <field name="name"/>
-                <!-- <field name="category_id"/> -->
                 <field name="category_full_name"/>
                 <field name="teacher_instructor_id"/>
                 <field name="driving_instructor_id"/>
@@ -169,7 +168,7 @@
         <field name="priority">50</field>
         <field name="arch" type="xml">
             <pivot sample="1" disable_linking="1" display_quantity="1">
-                <field name="start_date" interval="year" type="col"/>
+                <!-- <field name="start_date" interval="year" type="col"/> -->
                 <field name="start_date" interval="month" type="col"/>
                 <field name="name" type="row"/>
                 <field name="student_ids" type="row"/>
