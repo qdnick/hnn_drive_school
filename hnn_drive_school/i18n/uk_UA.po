@@ -46,6 +46,7 @@ msgid ""
 msgstr ""
 "<br/>\n"
 "                                        <span>Період групи : з </span>"
+
 #. module: hnn_drive_school
 #: model_terms:ir.ui.view,arch_db:hnn_drive_school.report_study_group_template
 msgid ""
